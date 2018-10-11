@@ -21,26 +21,28 @@ class PageContainer extends Component {
         // on submit change, it will be passed to the page_body, to filter the results.
         //
         // the results stock the number of results, so it can be displayed in the page_header.
-        this.state = {
-            url: "https://api.myjson.com/bins/166978",
-            pageName: "",
-            filters: [],
-            searchWord: null,
-            results: 0,
-            data : null
-        }
+        // this.state = {
+        //     url: "https://api.myjson.com/bins/zr1wc",
+        //     pageName: "",
+        //     filters: [],
+        //     searchWord: null,
+        //     results: 0,
+        //     data : null
+        // }
         
 
     }
 
     componentDidMount(){
         console.log(this.state.pageName);
+        console.log(this.state.url);
+        console.log(this.state.results);
         fetch(this.state.url)
         .then(response => response.json())
         .then(data => {
             this.setState({
-                data,
-                results: data[this.state.page].length
+                data: data,
+                results: data[this.state.pageName].length
             })
             console.log(this.state.data);
             console.log(this.state.results);
@@ -76,7 +78,7 @@ class PageContainer extends Component {
             <div style={pageStyle}>
                 <PageHeader
                     url={this.state.url}
-                    page={this.state.page}
+                    page={this.state.pageName}
                     results={this.state.results}
                     filters={this.state.filters}
                     addFilter={this.addFilter}

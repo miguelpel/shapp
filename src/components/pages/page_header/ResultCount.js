@@ -2,7 +2,7 @@ import React from 'react';
 
 const ResultCount = (props) => {
     return(
-        <span>{props.results} {props.page}(s)</span>
+        <span>{props.results} {props.tag}(s)</span>
     )
 }
 

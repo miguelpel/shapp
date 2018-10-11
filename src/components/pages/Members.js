@@ -5,7 +5,12 @@ class MembersPage extends PageContainer {
     constructor(props) {
         super(props);
         this.state = {
-            pageName: "member"
+            pageName: "members",
+            url: "https://api.myjson.com/bins/zr1wc",
+            filters: [],
+            searchWord: null,
+            results: 0,
+            data : null
         }
     }
 }

@@ -22,10 +22,9 @@ class PageHeader extends Component {
         // addFilter={this.addFilter}
         // searchWord={this.searchWord}
         // handleSearch={this.handleSearch}
-        
         this.state = {
             url: this.props.url,
-            page: this.props.page,
+            page: this.props.page.slice(0, -1),
             results: this.props.results,
             filters: this.props.filters,
             addFilter: this.props.addFilter,
@@ -43,8 +42,8 @@ class PageHeader extends Component {
                 <SearchField />
 
                 {/* <FilterField properties={this.state.values}/> */}
-                <ResultCount results={this.props.results} page={this.props.page}/>
-                <p>count      add filter button</p>
+                <ResultCount results={this.props.results} tag={this.state.page}/>
+                <span>add filter</span>
             </div>
         )
     }
