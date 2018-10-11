@@ -1,11 +1,12 @@
-import React from 'react';
+import PageContainer from './PageContainer';
 
-const Trainings = () => {
-    return(
-        <div>
-            Trainings
-        </div>
-    )
+class TrainingsPage extends PageContainer {
+    constructor(props) {
+        super(props);
+        this.state = {
+            pageName: "training"
+        }
+    }
 }
 
-export default Trainings;
+export default TrainingsPage;

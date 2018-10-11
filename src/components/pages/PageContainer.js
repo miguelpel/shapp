@@ -23,7 +23,7 @@ class PageContainer extends Component {
         // the results stock the number of results, so it can be displayed in the page_header.
         this.state = {
             url: "https://api.myjson.com/bins/166978",
-            page: "trainings",
+            pageName: "",
             filters: [],
             searchWord: null,
             results: 0,
@@ -34,6 +34,7 @@ class PageContainer extends Component {
     }
 
     componentDidMount(){
+        console.log(this.state.pageName);
         fetch(this.state.url)
         .then(response => response.json())
         .then(data => {

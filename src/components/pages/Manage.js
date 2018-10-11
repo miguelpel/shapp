@@ -1,11 +1,13 @@
-import React from 'react';
+import PageContainer from './PageContainer';
 
-const Manage = () => {
-    return(
-        <div>
-          Manage
-        </div>
-    )
+
+class ManagePage extends PageContainer {
+    constructor(props) {
+        super(props);
+        this.state = {
+            pageName: "manage"
+        }
+    }
 }
 
-export default Manage;
+export default ManagePage;

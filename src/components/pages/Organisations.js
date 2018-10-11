@@ -1,11 +1,13 @@
-import React from 'react';
+import PageContainer from './PageContainer';
 
-const Organisations = () => {
-    return(
-        <div>
-            Organisations
-        </div>
-    )
+
+class OrganisationsPage extends PageContainer {
+    constructor(props) {
+        super(props);
+        this.state = {
+            pageName: "organisation"
+        }
+    }
 }
 
-export default Organisations;
+export default OrganisationsPage;

@@ -1,11 +1,13 @@
-import React from 'react';
+import PageContainer from './PageContainer';
 
-const Members = () => {
-    return(
-        <div>
-            Members
-        </div>
-    )
+
+class MembersPage extends PageContainer {
+    constructor(props) {
+        super(props);
+        this.state = {
+            pageName: "member"
+        }
+    }
 }
 
-export default Members;
+export default MembersPage;
