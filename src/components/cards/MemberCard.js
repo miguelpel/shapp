@@ -16,7 +16,7 @@ const MemberCard = ({
 }) => (
   <div key={id} className="memberCard">
     <div className="memberCard__left">
-      <img className="memberCadr__image" src={`${photo}`} alt={`${name}`} />
+      <img className="memberCard__image" src={`${photo}`} alt={`${name}`} />
     </div>
 
     <div className="memberCard__center">

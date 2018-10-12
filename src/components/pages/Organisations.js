@@ -1,13 +1,45 @@
-import PageContainer from './PageContainer';
+import PageContainer from "./PageContainer";
 
+import React, { Component } from "react";
+import OrganisationsCard from "../cards/OrganisationsCard";
 
 class OrganisationsPage extends PageContainer {
-    constructor(props) {
-        super(props);
-        this.state = {
-            pageName: "organisation"
-        }
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      pageName: "organisation",
+      organisationsUrl: "https://api.myjson.com/bins/qqkkk",
+      organisationsData: []
+    };
+  }
+
+  componentDidMount() {
+    fetch(this.state.organisationsUrl)
+      .then(result => result.json())
+      .then(result => {
+        this.setState({
+          organisationsData: result
+        });
+      });
+  }
+
+  render() {
+    const renderOrganisations = this.state.organisationsData.map(item => {
+      return (
+        <OrganisationsCard
+          id={item.id}
+          organisationLogo={item.organisationLogo}
+          acronym={item.acronym}
+          telephone={item.telephone}
+          website={item.website}
+          city={item.city}
+          country={item.country}
+        />
+      );
+    });
+
+    return <div>{renderOrganisations}</div>;
+  }
 }
 
 export default OrganisationsPage;

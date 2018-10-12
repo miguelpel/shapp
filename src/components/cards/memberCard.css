@@ -46,3 +46,7 @@
   border-radius: 3px;
   background-color: #4a2b3a;
 }
+
+.memberCard__image {
+  max-width: 100%;
+}
