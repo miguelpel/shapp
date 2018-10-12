@@ -6,7 +6,7 @@ class ManagePage extends PageContainer {
         super(props);
         this.state = {
             pageName: "manage",
-            url: "https://api.myjson.com/bins/zr1wc",
+            url: "",
             filters: [],
             searchWord: null,
             results: 0,

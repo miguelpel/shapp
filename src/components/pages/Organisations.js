@@ -6,7 +6,7 @@ class OrganisationsPage extends PageContainer {
         super(props);
         this.state = {
             pageName: "organisations",
-            url: "https://api.myjson.com/bins/zr1wc",
+            url: "https://api.myjson.com/bins/19781g",
             filters: [],
             searchWord: null,
             results: 0,

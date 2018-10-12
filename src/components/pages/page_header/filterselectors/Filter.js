@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Select from 'react-select';
 
+import { decamelize } from './functions';   
 // the PageHeader needs to be an object component,
 // to keep track of the selections.
 
@@ -13,9 +14,9 @@ class FilterField extends Component {
     constructor(props){
         super(props);
 
-        // take the options from the props, and format them, to add them to the state.
-        const options = this.props.properties.map((option) => {
-            return {value : option, label: option}
+        //take the options from the props, and format them, to add them to the state.
+        const options = this.props.options.map((option) => {
+            return {value : option, label: decamelize(option)}
         });
 
         this.state = {
@@ -27,7 +28,11 @@ class FilterField extends Component {
 
     handleChange = (selectedOption) => {
         this.setState({ selectedOption });
+        if(this.props.activateFilterLine !== undefined) {
+            this.props.activateFilterLine(selectedOption.value);
+        }
         console.log(`Option selected:`, selectedOption);
+        this.props.recordSelection(this.props.title, selectedOption.value);
     }
 
     displayOptions = () => {
@@ -40,8 +45,10 @@ class FilterField extends Component {
 
     render(){
         const style = {
-            width:'300px',
-            fontFamily: 'Roboto-Light'
+            width:'200px',
+            fontFamily: 'Roboto-Light',
+            marginBottom: '10px',
+            marginRight: '10px'
         }
         const { selectedOption } = this.state;
         return(

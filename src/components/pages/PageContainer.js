@@ -34,18 +34,18 @@ class PageContainer extends Component {
     }
 
     componentDidMount(){
-        console.log(this.state.pageName);
-        console.log(this.state.url);
-        console.log(this.state.results);
+        //console.log(this.state.pageName);
+        //console.log(this.state.url);
+        //console.log(this.state.results);
         fetch(this.state.url)
         .then(response => response.json())
         .then(data => {
             this.setState({
-                data: data,
+                data: data[this.state.pageName],
                 results: data[this.state.pageName].length
             })
-            console.log(this.state.data);
-            console.log(this.state.results);
+            //console.log(this.state.data);
+            //console.log(this.state.results);
             }
         )
         .catch(error => console.log(error.message));
@@ -77,10 +77,10 @@ class PageContainer extends Component {
         return(
             <div style={pageStyle}>
                 <PageHeader
-                    url={this.state.url}
-                    page={this.state.pageName}
+                    pageName={this.state.pageName}
                     results={this.state.results}
                     filters={this.state.filters}
+                    data={this.state.data}
                     addFilter={this.addFilter}
                     searchWord={this.searchWord}
                     handleSearch={this.handleSearch}
