@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
 // COMPONENTS
-import FilterField from './filterselectors/Filter';
+// import FilterField from './filterselectors/Filter';
 import SearchField from './searchfield/SearchField';
 import ResultCount from './ResultCount';
+import FilterLine from './filterselectors/FilterLine';
 
 // CSS
 import './PageHeader.css';
@@ -22,18 +23,17 @@ class PageHeader extends Component {
         // addFilter={this.addFilter}
         // searchWord={this.searchWord}
         // handleSearch={this.handleSearch}
-        
         this.state = {
-            url: this.props.url,
-            page: this.props.page,
+            pageName: this.props.pageName,
             results: this.props.results,
             filters: this.props.filters,
+            data: this.props.data,
             addFilter: this.props.addFilter,
             searchWord: this.props.searchWord,
             handleSearch: this.props.handleSearch
         }
     }
-
+ 
     render(){
         const headerStyle = {
             padding: '10px'
@@ -41,10 +41,9 @@ class PageHeader extends Component {
         return(
             <div style={headerStyle}>
                 <SearchField />
-
-                {/* <FilterField properties={this.state.values}/> */}
-                <ResultCount results={this.props.results} page={this.props.page}/>
-                <p>count      add filter button</p>
+                <FilterLine pageName={this.state.pageName} data={this.state.data}/>
+                <ResultCount results={this.props.results} tag={this.state.pageName}/>
+                <span>add filter</span>
             </div>
         )
     }
