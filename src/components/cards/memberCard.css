@@ -1,27 +1,44 @@
+.memberCard > * > * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
 .memberCard {
   margin-bottom: 3px;
   max-width: 980px;
-  min-height: 147px;
+  min-height: 150px;
   display: flex;
   font-size: 18px;
-  /* line-height: 0.5; */
   color: #787878;
   background-color: #ffffff;
 }
+
 .memberCard__left {
-  flex: 1 1 250px;
+  padding: 10px;
+  flex: 1 1 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .memberCard__center {
-  flex: 1 1 580px;
+  flex: 1 1 700px;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  align-content: space-around;
 }
 .memberCard__right {
-  flex: 1 1 250px;
+  flex: 1 1 280px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
 }
+
+.memberCard__text {
+  width: 100%;
+}
+
 .btn {
   padding: 3px 5px;
   color: white;
