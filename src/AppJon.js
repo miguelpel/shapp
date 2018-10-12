@@ -31,14 +31,5 @@ class App extends Component {
     );
   }
 }
-// function Hello(){
-//   return(
-//   <div>
-//            <Trainings />
-//             <Organisations />
-//             <Members />
-//              <Manage />
-// </div>
-//   )
-//}
+
 export default App;
