@@ -1,54 +1,42 @@
 import React, { Component } from "react";
-import "./trainingCard.css";
-import trainingCardData from "../../jsonData/trainingCard.json";
+import "./TrainingCard.css";
 
-class TrainingCard extends Component {
-  constructor(props) {
-    super(props);
+// JSON link:
+// https://api.myjson.com/bins/wjjpw
 
-    this.state = {
-      mydata: trainingCardData
-    };
-  }
+const TrainingCard = ({
+  id,
+  logo,
+  nameTraining,
+  descriptionTraining,
+  dateTraining,
+  eligibleCountries,
+  city,
+  country
+}) => (
+  <div key={id} className="trainingCard">
+    <div className="trainingCard__left">
+      <img
+        className="trainingCard__image"
+        src={`${logo}`}
+        alt={`${nameTraining}`}
+      />
+    </div>
 
-  render() {
-    const { mydata } = this.state;
+    <div className="trainingCard__center">
+      <p className="trainingCard__text">{nameTraining}</p>
+      <p className="trainingCard__text">{descriptionTraining}</p>
+      <p className="trainingCard__text">{dateTraining}</p>
+      <p className="trainingCard__text">
+        Eligible Countries :{eligibleCountries}
+      </p>
+    </div>
 
-    const printData = mydata.map((training, inx) => (
-      <div key={training.id} className="trainingCard">
-        <div className="trainingCard__left">
-          <img src={`${training.logo}`} alt="training logo" />
-        </div>
-
-        <div className="trainingCard__center">
-          <p>{training.nameTraining}</p>
-          <p>{training.descriptionTraining}</p>
-          <p>{training.dateTraining}</p>
-          <p>
-            Eligible Countries :
-            {training.eligibleCountries.map(item => {
-              return (
-                <img
-                  key={`${item}`}
-                  className="flag"
-                  src={`${item}`}
-                  alt="flag logo"
-                />
-              );
-            })}
-          </p>
-        </div>
-
-        <div className="trainingCard__right">
-          <p>
-            {training.city}, {training.country}
-          </p>
-        </div>
-      </div>
-    ));
-
-    return <div>{printData}</div>;
-  }
-}
+    <div className="trainingCard__right">
+      <p className="trainingCard__text">{city}</p>
+      <p className="trainingCard__text">{country}</p>
+    </div>
+  </div>
+);
 
 export default TrainingCard;

@@ -1,41 +1,41 @@
 import React, { Component } from "react";
-import "./organisationsCard.css";
-import organisationsCardData from "../../jsonData/organisationsCard.json";
+import "./OrganisationsCard.css";
 
-class OrganisationsCard extends Component {
-  state = {
-    dataOrganisations: organisationsCardData
-  };
+// JSON link:
+// https://api.myjson.com/bins/qqkkk
 
-  render() {
-    const { dataOrganisations } = this.state;
-    const printOrganisationsData = dataOrganisations.map(organisation => (
-      <div key={organisation.id} className="organisationCard">
-        <div className="organisationCard__left">
-          <img
-            src={`${organisation.organisationLogo}`}
-            alt={`${organisation.acronym}`}
-          />
-        </div>
+const OrganisationsCard = ({
+  id,
+  organisationLogo,
+  acronym,
+  telephone,
+  website,
+  city,
+  country
+}) => (
+  <div key={id} className="organisationCard">
+    <div className="organisationCard__left">
+      <img
+        className="organisationCard__image"
+        src={`${organisationLogo}`}
+        alt={`${acronym}`}
+      />
+    </div>
 
-        <div className="organisationCard__center">
-          <p>{organisation.acronym}</p>
-          <p>{organisation.telephone}</p>
-          <p>{organisation.website}</p>
-        </div>
+    <div className="organisationCard__center">
+      <p className="organisationCard__text">{acronym}</p>
+      <p className="organisationCard__text">{telephone}</p>
+      <p className="organisationCard__text">{website}</p>
+    </div>
 
-        <div className="organisationCard__right">
-          <p>{organisation.city}</p>
-          <p>{organisation.country}</p>
-          <a className="btn" href="#">
-            Send Mail
-          </a>
-        </div>
-      </div>
-    ));
-
-    return <div>{printOrganisationsData}</div>;
-  }
-}
+    <div className="organisationCard__right">
+      <p className="organisationCard__text">{city}</p>
+      <p className="organisationCard__text">{country}</p>
+      <a className="btn" href="#">
+        Send Mail
+      </a>
+    </div>
+  </div>
+);
 
 export default OrganisationsCard;
