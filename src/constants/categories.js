@@ -16,3 +16,5 @@ export const members = [
         "organisations",
         "position"
     ];
+
+export const apiUrl = "https://api.myjson.com/bins/19781g";
