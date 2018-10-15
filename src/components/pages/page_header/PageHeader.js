@@ -40,7 +40,7 @@ class PageHeader extends Component {
         }
         return(
             <div style={headerStyle}>
-                <SearchField />
+                <SearchField pageName={this.state.pageName}/>
                 <FilterLine pageName={this.state.pageName} data={this.state.data}/>
                 <ResultCount results={this.props.results} tag={this.state.pageName}/>
                 <span>add filter</span>

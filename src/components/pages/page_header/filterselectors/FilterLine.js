@@ -123,6 +123,7 @@ class FilterLine extends Component {
     render(){
         // style to have the filters inline
         const style={
+            marginTop: '5px',
             display: 'flex',
             flexDirection: 'row'
         }
