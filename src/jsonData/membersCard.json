@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "photo": "./images/memberCard/henry.png",
+    "name": "Name 1",
+    "surname": "Surname 1",
+    "telephone": "+30 Telephone",
+    "address": ["45 address", "16584", "Athens", "Greece"],
+    "organisation": "Organisation name",
+    "position": "position ?"
+  },
+
+  {
+    "id": 2,
+    "photo": "./images/memberCard/james.png",
+    "name": "Name 2",
+    "surname": "Surname 2",
+    "telephone": "+30 Telephone",
+    "address": ["45 address", "16584", "Athens", "Greece"],
+    "organisation": "Organisation name",
+    "position": "position ?"
+  },
+
+  {
+    "id": 3,
+    "photo": "./images/memberCard/jules.png",
+    "name": "Name 3",
+    "surname": "Surname 3",
+    "telephone": "+30 Telephone",
+    "address": ["45 address", "16584", "Athens", "Greece"],
+    "organisation": "Organisation name",
+    "position": "position ?"
+  },
+
+  {
+    "id": 4,
+    "photo": "./images/memberCard/Mimie.png",
+    "name": "Name 4",
+    "surname": "Surname 4",
+    "telephone": "+30 Telephone",
+    "address": ["45 address", "16584", "Athens", "Greece"],
+    "organisation": "Organisation name",
+    "position": "position ?"
+  },
+
+  {
+    "id": 5,
+    "photo": "./images/memberCard/Nana.png",
+    "name": "Name 5",
+    "surname": "Surname 5",
+    "telephone": "+30 Telephone",
+    "address": ["45 address", "16584", "Athens", "Greece"],
+    "organisation": "Organisation name",
+    "position": "position ?"
+  }
+]

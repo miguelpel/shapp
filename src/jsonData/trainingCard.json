@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1, 
+    "logo": "./images/trainingCard/logo-1.png", 
+    "nameTraining": "Name 1",
+    "descriptionTraining": "description 1",
+    "dateTraining": "00.00.0000",
+    "eligibleCountries": [
+      "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
+    ],
+    "city": "City name 1", "country": "Country name 1"
+  },
+
+  {
+    "id": 2,
+    "logo": "./images/trainingCard/logo-2.png",
+    "nameTraining": "Name 2",
+    "descriptionTraining": "description 2",
+    "dateTraining": "00.00.0000",
+    "eligibleCountries": [
+      "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
+    ],
+    "city": "City name 2", "country": "Country name 2"
+  },
+
+  {
+    "id": 3,
+    "logo": "./images/trainingCard/logo-3.png",
+    "nameTraining": "Name 3",
+    "descriptionTraining": "description 3",
+    "dateTraining": "00.00.0000",
+    "eligibleCountries": [
+      "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
+    ],
+    "city": "City name 3", "country": "Country name 3"
+  },
+
+  {
+    "id": 4,
+    "logo": "./images/trainingCard/logo-4.jpg",
+    "nameTraining": "Name 4",
+    "descriptionTraining": "description 4",
+    "dateTraining": "00.00.0000",
+    "eligibleCountries": [
+      "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
+    ],
+    "city": "City name 4", "country": "Country name 4"
+  },
+
+  {
+    "id": 5,
+    "logo": "./images/trainingCard/logo-5.jpg",
+    "nameTraining": "Name 5",
+    "descriptionTraining": "description 5",
+    "dateTraining": "00.00.0000",
+    "eligibleCountries": [
+      "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
+    ],
+    "city": "City name 5", "country": "Country name 5"
+  }
+
+]

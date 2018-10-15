@@ -1,0 +1,54 @@
+{
+    "url": "https://api.myjson.com/bins/166978",
+    "trainings":[
+        {
+            "id": 1,
+            "title": "What is Lorem Ipsum",
+            "country": "Greece",
+            "city": "Athens",
+            "eligible Countries": [
+                "Greece",
+                "Germany"
+            ],
+            "beginning Date": "2015-03-25"
+        },
+        {
+            "id": 2,
+            "title": "Where does it come from",
+            "country": "Germany",
+            "city": "Berlin",
+            "eligibleCountries": [
+                "Greece",
+                "Germany",
+                "Sweden",
+                "United Kingdom"
+            ],
+            "beginningDate": "2018-10-23"
+        },
+        {
+            "id": 3,
+            "title": "Why do we use it",
+            "country": "United Kingdom",
+            "city": "London",
+            "eligibleCountries": [
+                "Greece",
+                "Germany",
+                "United Kingdom",
+                "Spain"
+            ],
+            "beginningDate": "2017-02-09"
+        },
+        {
+            "id": 4,
+            "title": "Where can I get some",
+            "country": "Romania",
+            "city": "Bucharest",
+            "eligibleCountries": [
+                "Germany",
+                "Spain",
+                "Croatia"
+            ],
+            "beginningDate": "2017-10-16"
+        }
+    ]
+}

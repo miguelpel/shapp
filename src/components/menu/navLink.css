@@ -1,0 +1,43 @@
+.myLinks {
+    text-decoration: none;
+    color: white;
+}
+.myLinks ul{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+.myLinks li{
+    padding-top: 5px;
+    color: white;
+}
+.myLinks ul li:last-child{
+    padding-top: 30px;
+    font-weight: bolder;
+    color: #bdb7bb;
+}
+.myLinks ul li:last-child:hover{
+    cursor: pointer;
+    color: #fff;
+   
+}
+
+.activeLink {
+    text-decoration: none;
+    color: #bdb7bb;
+}
+.activeLink:hover {
+    
+    color: #fff;
+}
+.activeLink.active {  
+    color: #fff;
+}
+#icon{
+    position: relative;
+    top: 10px;
+    left: -10px;
+     color: #bdb7bb;
+    /* -webkit-filter: invert(100%);
+    filter: invert(100%); */
+}

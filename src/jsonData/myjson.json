@@ -1,0 +1,205 @@
+{
+    "url": "https://api.myjson.com/bins/19781g",
+    "trainings": [ 
+        {
+          "id": 1, 
+          "logo": "./images/trainingCard/logo-1.png", 
+          "nameTraining": "What is Lorem Ipsum",
+          "descriptionTraining": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "dateTraining": "2015-03-25",
+          "eligibleCountries": [
+            "greece",
+            "germany"
+          ],
+          "city": "athens", "country": "greece"
+        },
+        {
+          "id": 2,
+          "logo": "./images/trainingCard/logo-2.png",
+          "nameTraining": "Where does it come from",
+          "descriptionTraining": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+          "dateTraining": "2018-10-23",
+          "eligibleCountries": [
+            "greece",
+            "germany",
+            "sweden",
+            "united kingdom"
+        ],
+          "city": "berlin", "country": "germany"
+        },
+        {
+          "id": 3,
+          "logo": "./images/trainingCard/logo-3.png",
+          "nameTraining": "Why do we use it",
+          "descriptionTraining": "dIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+          "dateTraining": "2017-02-09",
+          "eligibleCountries": [
+            "greece",
+            "germany",
+            "united kingdom",
+            "spain"
+        ],
+          "city": "london", "country": "united kingdom"
+        },
+        {
+          "id": 4,
+          "logo": "./images/trainingCard/logo-4.jpg",
+          "nameTraining": "Where can I get some",
+          "descriptionTraining": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+          "dateTraining": "2017-10-16",
+          "eligibleCountries": [
+            "germany",
+            "spain",
+            "croatia"
+        ],
+          "city": "bucharest", "country": "romania"
+        },
+        {
+          "id": 5,
+          "logo": "./images/trainingCard/logo-5.jpg",
+          "nameTraining": "The Samuel L. Jackson Lorem Ipsum",
+          "descriptionTraining": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.",
+          "dateTraining": "2019-11-01",
+          "eligibleCountries": [
+            "germany",
+            "croatia",
+            "united kingdom",
+            "spain"
+        ],
+          "city": "tallinn", "country": "estonia"
+        }
+      ],
+    "organisations": [
+        {
+          "id": 1,
+          "organisationLogo": "./images/organisationsCard/erasmus.png",
+          "acronym": "Erasmus +",
+          "telephone": "204 654 05 93",
+          "website": "www.website1.com",
+          "city": "berlin",
+          "country": "germany"
+        },
+        
+        {
+          "id": 2,
+          "organisationLogo": "./images/organisationsCard/real_thing.png",
+          "acronym": "The Real Thing",
+          "telephone": "+33 6 69 84 82 38",
+          "website": "www.website2.com",
+          "city": "paris",
+          "country": "france"
+        },
+      
+        {
+          "id": 3,
+          "organisationLogo": "./images/organisationsCard/red_leaves.png",
+          "acronym": "Red Leaves",
+          "telephone": "+30 654 546 65 65",
+          "website": "www.website3.com",
+          "city": "athens",
+          "country": "greece"
+        }, 
+      
+        {
+          "id": 4,
+          "organisationLogo": "./images/organisationsCard/s_h_a.png",
+          "acronym": "Social Hackers Academy",
+          "telephone": "+30 678 654 95",
+          "website": "www.website4.com",
+          "city": "athens",
+          "country": "greece"
+        },
+      
+        {
+          "id": 5,
+          "organisationLogo": "./images/organisationsCard/snow_image.png",
+          "acronym": "Snow Image",
+          "telephone": "67 65 33 45 65",
+          "website": "www.website5.com",
+          "city": "copenhagen",
+          "country": "danemark"
+        }
+      ],
+    "members": [
+        {
+          "id": 1,
+          "photo": "./images/memberCard/henry.png",
+          "name": "Henry",
+          "surname": "Delanow",
+          "telephone": "+33 6 57 93 48 28",
+          "address": {
+              "line1": "45 address",
+              "line2": "",
+              "postcode": "16584",
+              "city": "paris",
+              "country": "france"
+          },
+          "organisations": "",
+          "position": ""
+        },
+        {
+          "id": 2,
+          "photo": "./images/memberCard/james.png",
+          "name": "James",
+          "surname": "Francis",
+          "telephone": "+30 54 564 676",
+          "address": {
+            "line1": "Kononos, 453",
+            "line2": "Vyronas",
+            "postcode": "165 97",
+            "city": "athens",
+            "country": "greece"
+        },
+          "organisation": "Social Hackers Academy",
+          "position": "Teacher"
+        },
+        {
+          "id": 3,
+          "photo": "./images/memberCard/jules.png",
+          "name": "Jules",
+          "surname": "Furlow",
+          "telephone": "+40 654 345 65",
+          "address": {
+            "line1": "Senate House",
+            "line2": "Malet Street",
+            "postcode": "WC1E 7HU",
+            "city": "london",
+            "country": "united kingdom"
+        },
+          "organisation": "Red Leaves",
+          "position": "CEO"
+        },
+        {
+          "id": 4,
+          "photo": "./images/memberCard/Mimie.png",
+          "name": "Mimie",
+          "surname": "Dominik",
+          "telephone": "+30 345 654 30",
+          "address": {
+            "line1": "Rahukohtu 3",
+            "line2": "",
+            "postcode": "15161",
+            "city": "tallinn",
+            "country": "estonia"
+        },
+          "organisation": "",
+          "position": ""
+        },
+        {
+          "id": 5,
+          "photo": "./images/memberCard/Nana.png",
+          "name": "Nana",
+          "surname": "Poire",
+          "telephone": "+33 6 84 34 05 27",
+          "address": {
+            "line1": "102 cours la Fayette",
+            "line2": "",
+            "postcode": "69003",
+            "city": "lyon",
+            "country": "france"
+          },
+            "organisation": "",
+            "position": ""
+          }
+      ]
+}
