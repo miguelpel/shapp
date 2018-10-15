@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./TrainingCard.css";
+import "./trainingCard.css";
 
 // JSON link:
 // https://api.myjson.com/bins/wjjpw
