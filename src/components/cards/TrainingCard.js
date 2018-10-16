@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./trainingCard.css";
+import "./TrainingCard.css";
 
 // JSON link:
 // https://api.myjson.com/bins/wjjpw
@@ -28,7 +28,7 @@ const TrainingCard = ({
       <p className="trainingCard__text">{descriptionTraining}</p>
       <p className="trainingCard__text">{dateTraining}</p>
       <p className="trainingCard__text">
-        Eligible Countries :{eligibleCountries}
+        Eligible Countries : {eligibleCountries}
       </p>
     </div>
 
