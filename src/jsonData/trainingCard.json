@@ -8,7 +8,17 @@
     "eligibleCountries": [
       "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
     ],
-    "city": "City name 1", "country": "Country name 1"
+    "city": "City name 1", "country": "Country name 1",
+
+    "description1": "The notorious Coaching training is back. Volounteer Path Guides specifically is aiming to increase the quality of youth work, by focusing on coaching and menthoring of volunteers. The challenge is to be able to coach and/or mentor young people, especially when it comes to topics such as employability, employment or entrepreneurship. In this 8 days journey you will get the chance to get a hands on experience on coaching though using coaching skills, from some exercises to practice techniques fo full coaching sessions.",
+    "description2": "Solidarity Mission offers 3 spots for motivated people above 18 years old that they work with young people and they are willing to improve their professional performance, by developing their own coaching and mentoring attitude and toolkit.",
+    "costs": ["Accommodation, food are covered 100%", "Travel costs covered 100% up to the maximum reimbursement 180 &#8364;", "Participation fee on the hosting organization: 60 &#8364;"],
+    "deadline": "20 February 2018",
+    "infoletter": "http://bit.ly/VPG-info",
+    "applicationForm": "http://bit.ly/VPG-apply",
+    "calendar": "http://bit.ly/SynergyGreeceCalendar",
+    "mail": "training@solidaritymission.org",
+    "comment": "This project is organized by our friends and partners Qualtimpact, it is delivered by our P and is funded by Erasmus+. We highly appreciate when you share this information within your networks and with people who might be interest in it"
   },
 
   {
@@ -20,7 +30,17 @@
     "eligibleCountries": [
       "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
     ],
-    "city": "City name 2", "country": "Country name 2"
+    "city": "City name 2", "country": "Country name 2",
+
+    "description1": "The notorious Coaching training is back. Volounteer Path Guides specifically is aiming to increase the quality of youth work, by focusing on coaching and menthoring of volunteers. The challenge is to be able to coach and/or mentor young people, especially when it comes to topics such as employability, employment or entrepreneurship. In this 8 days journey you will get the chance to get a hands on experience on coaching though using coaching skills, from some exercises to practice techniques fo full coaching sessions.",
+    "description2": "Solidarity Mission offers 3 spots for motivated people above 18 years old that they work with young people and they are willing to improve their professional performance, by developing their own coaching and mentoring attitude and toolkit.",
+    "costs": ["Accommodation, food are covered 100%", "Travel costs covered 100% up to the maximum reimbursement 180 &#8364;", "Participation fee on the hosting organization: 60 &#8364;"],
+    "deadline": "20 February 2018",
+    "infoletter": "http://bit.ly/VPG-info",
+    "applicationForm": "http://bit.ly/VPG-apply",
+    "calendar": "http://bit.ly/SynergyGreeceCalendar",
+    "mail": "training@solidaritymission.org",
+    "comment": "This project is organized by our friends and partners Qualtimpact, it is delivered by our P and is funded by Erasmus+. We highly appreciate when you share this information within your networks and with people who might be interest in it"
   },
 
   {
@@ -32,7 +52,17 @@
     "eligibleCountries": [
       "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
     ],
-    "city": "City name 3", "country": "Country name 3"
+    "city": "City name 3", "country": "Country name 3",
+
+    "description1": "The notorious Coaching training is back. Volounteer Path Guides specifically is aiming to increase the quality of youth work, by focusing on coaching and menthoring of volunteers. The challenge is to be able to coach and/or mentor young people, especially when it comes to topics such as employability, employment or entrepreneurship. In this 8 days journey you will get the chance to get a hands on experience on coaching though using coaching skills, from some exercises to practice techniques fo full coaching sessions.",
+    "description2": "Solidarity Mission offers 3 spots for motivated people above 18 years old that they work with young people and they are willing to improve their professional performance, by developing their own coaching and mentoring attitude and toolkit.",
+    "costs": ["Accommodation, food are covered 100%", "Travel costs covered 100% up to the maximum reimbursement 180 &#8364;", "Participation fee on the hosting organization: 60 &#8364;"],
+    "deadline": "20 February 2018",
+    "infoletter": "http://bit.ly/VPG-info",
+    "applicationForm": "http://bit.ly/VPG-apply",
+    "calendar": "http://bit.ly/SynergyGreeceCalendar",
+    "mail": "training@solidaritymission.org",
+    "comment": "This project is organized by our friends and partners Qualtimpact, it is delivered by our P and is funded by Erasmus+. We highly appreciate when you share this information within your networks and with people who might be interest in it"
   },
 
   {
@@ -44,7 +74,17 @@
     "eligibleCountries": [
       "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
     ],
-    "city": "City name 4", "country": "Country name 4"
+    "city": "City name 4", "country": "Country name 4",
+
+    "description1": "The notorious Coaching training is back. Volounteer Path Guides specifically is aiming to increase the quality of youth work, by focusing on coaching and menthoring of volunteers. The challenge is to be able to coach and/or mentor young people, especially when it comes to topics such as employability, employment or entrepreneurship. In this 8 days journey you will get the chance to get a hands on experience on coaching though using coaching skills, from some exercises to practice techniques fo full coaching sessions.",
+    "description2": "Solidarity Mission offers 3 spots for motivated people above 18 years old that they work with young people and they are willing to improve their professional performance, by developing their own coaching and mentoring attitude and toolkit.",
+    "costs": ["Accommodation, food are covered 100%", "Travel costs covered 100% up to the maximum reimbursement 180 &#8364;", "Participation fee on the hosting organization: 60 &#8364;"],
+    "deadline": "20 February 2018",
+    "infoletter": "http://bit.ly/VPG-info",
+    "applicationForm": "http://bit.ly/VPG-apply",
+    "calendar": "http://bit.ly/SynergyGreeceCalendar",
+    "mail": "training@solidaritymission.org",
+    "comment": "This project is organized by our friends and partners Qualtimpact, it is delivered by our P and is funded by Erasmus+. We highly appreciate when you share this information within your networks and with people who might be interest in it"
   },
 
   {
@@ -56,7 +96,17 @@
     "eligibleCountries": [
       "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
     ],
-    "city": "City name 5", "country": "Country name 5"
+    "city": "City name 5", "country": "Country name 5",
+
+    "description1": "The notorious Coaching training is back. Volounteer Path Guides specifically is aiming to increase the quality of youth work, by focusing on coaching and menthoring of volunteers. The challenge is to be able to coach and/or mentor young people, especially when it comes to topics such as employability, employment or entrepreneurship. In this 8 days journey you will get the chance to get a hands on experience on coaching though using coaching skills, from some exercises to practice techniques fo full coaching sessions.",
+    "description2": "Solidarity Mission offers 3 spots for motivated people above 18 years old that they work with young people and they are willing to improve their professional performance, by developing their own coaching and mentoring attitude and toolkit.",
+    "costs": ["Accommodation, food are covered 100%", "Travel costs covered 100% up to the maximum reimbursement 180 &#8364;", "Participation fee on the hosting organization: 60 &#8364;"],
+    "deadline": "20 February 2018",
+    "infoletter": "http://bit.ly/VPG-info",
+    "applicationForm": "http://bit.ly/VPG-apply",
+    "calendar": "http://bit.ly/SynergyGreeceCalendar",
+    "mail": "training@solidaritymission.org",
+    "comment": "This project is organized by our friends and partners Qualtimpact, it is delivered by our P and is funded by Erasmus+. We highly appreciate when you share this information within your networks and with people who might be interest in it"
   }
 
 ]

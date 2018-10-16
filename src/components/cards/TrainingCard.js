@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./TrainingCard.css";
 
 // JSON link:
-// https://api.myjson.com/bins/wjjpw
+// https://api.myjson.com/bins/1hfqi0
 
 const TrainingCard = ({
   id,

@@ -7,7 +7,17 @@
     "telephone": "+30 Telephone",
     "address": ["45 address", "16584", "Athens", "Greece"],
     "organisation": "Organisation name",
-    "position": "position ?"
+    "position": "position ?",
+
+    "postCode": "123 45",
+    "dateOfBirth": "xx.xx.xxxx",
+    "phoneIcon": "./images/icons/phone.png",
+    "telephone1": "+30 Telephone",
+    "email": "emailname@box.com",
+    "website": "www.websitename.com",
+    "organisationFeesPaid": false,
+    "city": "City name",
+    "country": "Country name"
   },
 
   {
@@ -18,7 +28,17 @@
     "telephone": "+30 Telephone",
     "address": ["45 address", "16584", "Athens", "Greece"],
     "organisation": "Organisation name",
-    "position": "position ?"
+    "position": "position ?",
+
+    "postCode": "123 45",
+    "dateOfBirth": "xx.xx.xxxx",
+    "phoneIcon": "./images/icons/phone.png",
+    "telephone1": "+30 Telephone",
+    "email": "emailname@box.com",
+    "website": "www.websitename.com",
+    "organisationFeesPaid": false,
+    "city": "City name",
+    "country": "Country name"
   },
 
   {
@@ -29,7 +49,17 @@
     "telephone": "+30 Telephone",
     "address": ["45 address", "16584", "Athens", "Greece"],
     "organisation": "Organisation name",
-    "position": "position ?"
+    "position": "position ?",
+
+    "postCode": "123 45",
+    "dateOfBirth": "xx.xx.xxxx",
+    "phoneIcon": "./images/icons/phone.png",
+    "telephone1": "+30 Telephone",
+    "email": "emailname@box.com",
+    "website": "www.websitename.com",
+    "organisationFeesPaid": false,
+    "city": "City name",
+    "country": "Country name"
   },
 
   {
@@ -40,7 +70,17 @@
     "telephone": "+30 Telephone",
     "address": ["45 address", "16584", "Athens", "Greece"],
     "organisation": "Organisation name",
-    "position": "position ?"
+    "position": "position ?",
+
+    "postCode": "123 45",
+    "dateOfBirth": "xx.xx.xxxx",
+    "phoneIcon": "./images/icons/phone.png",
+    "telephone1": "+30 Telephone",
+    "email": "emailname@box.com",
+    "website": "www.websitename.com",
+    "organisationFeesPaid": false,
+    "city": "City name",
+    "country": "Country name"
   },
 
   {
@@ -51,6 +91,16 @@
     "telephone": "+30 Telephone",
     "address": ["45 address", "16584", "Athens", "Greece"],
     "organisation": "Organisation name",
-    "position": "position ?"
+    "position": "position ?",
+
+    "postCode": "123 45",
+    "dateOfBirth": "xx.xx.xxxx",
+    "phoneIcon": "./images/icons/phone.png",
+    "telephone1": "+30 Telephone",
+    "email": "emailname@box.com",
+    "website": "www.websitename.com",
+    "organisationFeesPaid": false,
+    "city": "City name",
+    "country": "Country name"
   }
 ]
