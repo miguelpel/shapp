@@ -1,7 +1,8 @@
 import PageContainer from "./PageContainer";
 
-import React, { Component } from "react";
+import React from "react";
 import MemberCard from "../cards/MemberCard";
+import MemberCardFull from "../cards/MemberCardFull";
 
 class MembersPage extends PageContainer {
   constructor(props) {
@@ -13,7 +14,7 @@ class MembersPage extends PageContainer {
       searchWord: null,
       results: 0,
       data: null,
-      membersUrl: "https://api.myjson.com/bins/13oarw",
+      membersUrl: "https://api.myjson.com/bins/cgmc0",
       membersData: []
     };
   }
@@ -28,23 +29,52 @@ class MembersPage extends PageContainer {
       });
   }
 
+  // render() {
+  //   const renderMembers = this.state.membersData.map(item => {
+  //     return (
+  //       <MemberCard
+  //         id={item.id}
+  //         photo={item.photo}
+  //         surname={item.surname}
+  //         name={item.name}
+  //         telephone={item.telephone}
+  //         address={item.address.map(address => `${address} `)}
+  //         organisation={item.organisation}
+  //         position={item.position}
+  //       />
+  //     );
+  //   });
+
+  //   return <div>{renderMembers}</div>;
+  // }
+
+  // MemberCardFull rendering
+
   render() {
-    const renderMembers = this.state.membersData.map(item => {
+    const renderMemberCardFull = this.state.membersData.map(item => {
       return (
-        <MemberCard
+        <MemberCardFull
           id={item.id}
           photo={item.photo}
-          surname={item.surname}
           name={item.name}
-          telephone={item.telephone}
+          surname={item.surname}
           address={item.address.map(address => `${address} `)}
+          postCode={item.postCode}
+          dateOfBirth={item.dateOfBirth}
+          phoneIcon={item.phoneIcon}
+          telephone={item.telephone}
+          telephone1={item.telephone1}
+          email={item.email}
+          website={item.website}
           organisation={item.organisation}
-          position={item.position}
+          organisationFeesPaid={item.organisationFeesPaid}
+          city={item.city}
+          country={item.country}
         />
       );
     });
 
-    return <div>{renderMembers}</div>;
+    return <div>{renderMemberCardFull}</div>;
   }
 }
 

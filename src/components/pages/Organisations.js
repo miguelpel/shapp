@@ -1,6 +1,6 @@
 import PageContainer from "./PageContainer";
 
-import React, { Component } from "react";
+import React from "react";
 import OrganisationsCard from "../cards/OrganisationsCard";
 
 class OrganisationsPage extends PageContainer {
