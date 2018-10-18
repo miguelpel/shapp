@@ -6,7 +6,23 @@
     "telephone": "XXXX-XXXX-XXXX-XXXX",
     "website": "www.website1.com",
     "city": " City 1",
-    "country": "Country 1"
+    "country": "Country 1",
+
+    "fullLegalName": "Full Legal Name",
+    "address": "Address 1",
+    "postCode": "xxx-xxx",
+    "PObox": "P.O. box 1",
+    "referee": "XXXXXXXXXX",
+    "refereePosition": "XXXXXXXXXX",
+    "telephone1": "XXXX-XXXX-XXXX-XXXX",
+    "mail": "email@website.com",
+    "organisationType": "XXXXXXXXXX",
+    "profit": "non-profit",
+    "PICnumber": "XXXXXXXXXX",
+    "nationalId": "XXXXXXXXXX",
+    "cedex": "XXXXXXXXXX",
+    "department": "XXXXXXXXXX",
+    "fax": "XXXXXXXXXX"
   },
   
   {
@@ -16,7 +32,23 @@
     "telephone": "XXXX-XXXX-XXXX-XXXX",
     "website": "www.website2.com",
     "city": " City 2",
-    "country": "Country 2"
+    "country": "Country 2",
+
+    "fullLegalName": "Full Legal Name",
+    "address": "Address 1",
+    "postCode": "xxx-xxx",
+    "PObox": "P.O. box 1",
+    "referee": "XXXXXXXXXX",
+    "refereePosition": "XXXXXXXXXX",
+    "telephone1": "XXXX-XXXX-XXXX-XXXX",
+    "mail": "email@website.com",
+    "organisationType": "XXXXXXXXXX",
+    "profit": "non-profit",
+    "PICnumber": "XXXXXXXXXX",
+    "nationalId": "XXXXXXXXXX",
+    "cedex": "XXXXXXXXXX",
+    "department": "XXXXXXXXXX",
+    "fax": "XXXXXXXXXX"
   },
 
   {
@@ -26,7 +58,23 @@
     "telephone": "XXXX-XXXX-XXXX-XXXX",
     "website": "www.website3.com",
     "city": " City 3",
-    "country": "Country 3"
+    "country": "Country 3",
+
+    "fullLegalName": "Full Legal Name",
+    "address": "Address 1",
+    "postCode": "xxx-xxx",
+    "PObox": "P.O. box 1",
+    "referee": "XXXXXXXXXX",
+    "refereePosition": "XXXXXXXXXX",
+    "telephone1": "XXXX-XXXX-XXXX-XXXX",
+    "mail": "email@website.com",
+    "organisationType": "XXXXXXXXXX",
+    "profit": "non-profit",
+    "PICnumber": "XXXXXXXXXX",
+    "nationalId": "XXXXXXXXXX",
+    "cedex": "XXXXXXXXXX",
+    "department": "XXXXXXXXXX",
+    "fax": "XXXXXXXXXX"
   }, 
 
   {
@@ -36,7 +84,23 @@
     "telephone": "XXXX-XXXX-XXXX-XXXX",
     "website": "www.website4.com",
     "city": " City 4",
-    "country": "Country 4"
+    "country": "Country 4",
+
+    "fullLegalName": "Full Legal Name",
+    "address": "Address 1",
+    "postCode": "xxx-xxx",
+    "PObox": "P.O. box 1",
+    "referee": "XXXXXXXXXX",
+    "refereePosition": "XXXXXXXXXX",
+    "telephone1": "XXXX-XXXX-XXXX-XXXX",
+    "mail": "email@website.com",
+    "organisationType": "XXXXXXXXXX",
+    "profit": "non-profit",
+    "PICnumber": "XXXXXXXXXX",
+    "nationalId": "XXXXXXXXXX",
+    "cedex": "XXXXXXXXXX",
+    "department": "XXXXXXXXXX",
+    "fax": "XXXXXXXXXX"
   },
 
   {
@@ -46,6 +110,22 @@
     "telephone": "XXXX-XXXX-XXXX-XXXX",
     "website": "www.website5.com",
     "city": " City 5",
-    "country": "Country 5"
+    "country": "Country 5",
+
+    "fullLegalName": "Full Legal Name",
+    "address": "Address 1",
+    "postCode": "xxx-xxx",
+    "PObox": "P.O. box 1",
+    "referee": "XXXXXXXXXX",
+    "refereePosition": "XXXXXXXXXX",
+    "telephone1": "XXXX-XXXX-XXXX-XXXX",
+    "mail": "email@website.com",
+    "organisationType": "XXXXXXXXXX",
+    "profit": "non-profit",
+    "PICnumber": "XXXXXXXXXX",
+    "nationalId": "XXXXXXXXXX",
+    "cedex": "XXXXXXXXXX",
+    "department": "XXXXXXXXXX",
+    "fax": "XXXXXXXXXX"
   }
 ]

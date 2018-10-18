@@ -30,29 +30,25 @@ class TrainingsPage extends PageContainer {
   }
 
   // render() {
-  //   const renderTrainings = this.state.trainingData.map(item => {
-  //     return (
-  //       <TrainingCard
-  //         id={item.id}
-  //         logo={item.logo}
-  //         nameTraining={item.nameTraining}
-  //         descriptionTraining={item.descriptionTraining}
-  //         dateTraining={item.dateTraining}
-  //         eligibleCountries={item.eligibleCountries.map(item => {
-  //           return (
-  //             <img
-  //               key={`${item}`}
-  //               className="flag"
-  //               src={`${item}`}
-  //               alt="flag logo"
-  //             />
-  //           );
-  //         })}
-  //         city={item.city}
-  //         country={item.country}
-  //       />
-  //     );
-  //   });
+  //   const renderTrainings = this.state.trainingData.map(item => (
+  //     <TrainingCard
+  //       id={item.id}
+  //       logo={item.logo}
+  //       nameTraining={item.nameTraining}
+  //       descriptionTraining={item.descriptionTraining}
+  //       dateTraining={item.dateTraining}
+  //       eligibleCountries={item.eligibleCountries.map(item => (
+  //         <img
+  //           key={`${item}`}
+  //           className="flag"
+  //           src={`${item}`}
+  //           alt="flag logo"
+  //         />
+  //       ))}
+  //       city={item.city}
+  //       country={item.country}
+  //     />
+  //   ));
 
   //   return <div>{renderTrainings}</div>;
   // }

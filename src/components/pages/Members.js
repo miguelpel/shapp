@@ -30,22 +30,20 @@ class MembersPage extends PageContainer {
   }
 
   // render() {
-  //   const renderMembers = this.state.membersData.map(item => {
-  //     return (
-  //       <MemberCard
-  //         id={item.id}
-  //         photo={item.photo}
-  //         surname={item.surname}
-  //         name={item.name}
-  //         telephone={item.telephone}
-  //         address={item.address.map(address => `${address} `)}
-  //         organisation={item.organisation}
-  //         position={item.position}
-  //       />
-  //     );
-  //   });
+  //   const renderMembers = this.state.membersData.map(item => (
+  //     <MemberCard
+  //       id={item.id}
+  //       photo={item.photo}
+  //       surname={item.surname}
+  //       name={item.name}
+  //       telephone={item.telephone}
+  //       address={item.address.map(address => `${address} `)}
+  //       organisation={item.organisation}
+  //       position={item.position}
+  //     />
+  //   ));
 
-  //   return <div>{renderMembers}</div>;
+  //   return <React.Fragment>{renderMembers}</React.Fragment>;
   // }
 
   // MemberCardFull rendering
@@ -74,7 +72,7 @@ class MembersPage extends PageContainer {
       );
     });
 
-    return <div>{renderMemberCardFull}</div>;
+    return <React.Fragment>{renderMemberCardFull}</React.Fragment>;
   }
 }
 

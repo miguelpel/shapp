@@ -7,7 +7,7 @@
 
 .organisationCard {
   margin-bottom: 3px;
-  max-width: 980px;
+  width: 950px;
   min-height: 150px;
   display: flex;
   font-size: 18px;
@@ -17,19 +17,19 @@
 
 .organisationCard__left {
   padding: 10px;
-  flex: 1 1 200px;
+  flex: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .organisationCard__center {
-  flex: 1 1 700px;
+  flex: 550px;
   display: flex;
   flex-flow: row wrap;
   align-content: space-around;
 }
 .organisationCard__right {
-  flex: 1 1 280px;
+  flex: 250px;
   display: flex;
   flex-flow: row wrap;
   align-content: space-around;

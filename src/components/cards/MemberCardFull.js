@@ -40,7 +40,7 @@ const MemberCardFull = ({
       </p>
       <p className="memberCard__text">
         {email}{" "}
-        <a className="btn" href="#">
+        <a className="btn" href={`mailto:${email}`}>
           Send Mail
         </a>
       </p>
