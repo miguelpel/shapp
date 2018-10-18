@@ -50,7 +50,7 @@ class TrainingsPage extends PageContainer {
   //     />
   //   ));
 
-  //   return <div>{renderTrainings}</div>;
+  //   return <React.Fragment>{renderTrainings}</React.Fragment>;
   // }
 
   // TrainingCardFull
@@ -82,7 +82,7 @@ class TrainingsPage extends PageContainer {
         />
       );
     });
-    return <div>{renderTrainingCardFull}</div>;
+    return <React.Fragment>{renderTrainingCardFull}</React.Fragment>;
   }
 }
 
