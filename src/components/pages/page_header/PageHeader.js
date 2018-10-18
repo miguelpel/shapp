@@ -15,22 +15,14 @@ import './PageHeader.css';
 class PageHeader extends Component {
     constructor(props){
         super(props);
-
-        // PROPS:
-        // page={this.state.page}
-        // results={this.state.results}
-        // filters={this.state.filters}
-        // addFilter={this.addFilter}
-        // searchWord={this.searchWord}
-        // handleSearch={this.handleSearch}
         this.state = {
-            pageName: this.props.pageName,
-            results: this.props.results,
-            filters: this.props.filters,
-            data: this.props.data,
-            addFilter: this.props.addFilter,
-            searchWord: this.props.searchWord,
-            handleSearch: this.props.handleSearch
+            pageName:this.props.pageName,
+            pageData:this.props.pageData,
+            result:this.props.results,
+            filters:this.props.filters,
+            searchWord:this.props.searchWord,
+            addFilter:this.props.addFilter,
+            addSearchWord:this.props.handleSearch
         }
     }
  
@@ -41,7 +33,7 @@ class PageHeader extends Component {
         return(
             <div style={headerStyle}>
                 <SearchField pageName={this.state.pageName}/>
-                <FilterLine pageName={this.state.pageName} data={this.state.data}/>
+                <FilterLine pageName={this.state.pageName} data={this.state.pageData}/>
                 <ResultCount results={this.props.results} tag={this.state.pageName}/>
                 <span>add filter</span>
             </div>

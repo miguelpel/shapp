@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
-import PageHeader from './page_header/PageHeader';
 
-// a false body, placeholder for the real one.
+import PageHeader from './page_header/PageHeader';
 import PageBody from './page_body/PageBody';
 
 class PageContainer extends Component {
