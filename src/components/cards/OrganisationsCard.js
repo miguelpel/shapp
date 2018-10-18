@@ -1,5 +1,5 @@
 import React from "react";
-import "./OrganisationsCard.css";
+import "./organisationsCard.css";
 
 // JSON link:
 // https://api.myjson.com/bins/y9tb4

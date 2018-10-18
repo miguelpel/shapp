@@ -1,5 +1,5 @@
 import React from "react";
-import "./MemberCardFull.css";
+import "./memberCardFull.css";
 
 const MemberCardFull = ({
   id,

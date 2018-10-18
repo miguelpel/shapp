@@ -1,5 +1,5 @@
 import React from "react";
-import "./OrganisationsCardFull.css";
+import "./organisationsCardFull.css";
 
 const OrganisationsCardFull = ({
   id,
