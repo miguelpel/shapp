@@ -7,13 +7,6 @@ import { removeDuplicatesAndRank } from './functions';
 class FilterLine extends Component {
     constructor(props){
         super(props);
-
-        // In the state:
-        // active: the filter category has been chosen or not.
-        // if active:true, display the second filter.
-        // categories: the options of the first filter.
-        // options: the options of the second filter.
-
         this.state = {
             pageName: this.props.pageName,
             active: false,
