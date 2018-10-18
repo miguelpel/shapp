@@ -1,7 +1,8 @@
 import PageContainer from "./PageContainer";
 
-import React, { Component } from "react";
+import React from "react";
 import TrainingCard from "../cards/TrainingCard";
+import TrainingCardFull from "../cards/TrainingCardFull";
 
 class TrainingsPage extends PageContainer {
   constructor(props) {
@@ -13,7 +14,7 @@ class TrainingsPage extends PageContainer {
       searchWord: null,
       results: 0,
       data: null,
-      trainingUrl: "https://api.myjson.com/bins/wjjpw",
+      trainingUrl: "https://api.myjson.com/bins/1hfqi0",
       trainingData: []
     };
   }
@@ -28,32 +29,60 @@ class TrainingsPage extends PageContainer {
       });
   }
 
+  // render() {
+  //   const renderTrainings = this.state.trainingData.map(item => (
+  //     <TrainingCard
+  //       id={item.id}
+  //       logo={item.logo}
+  //       nameTraining={item.nameTraining}
+  //       descriptionTraining={item.descriptionTraining}
+  //       dateTraining={item.dateTraining}
+  //       eligibleCountries={item.eligibleCountries.map(item => (
+  //         <img
+  //           key={`${item}`}
+  //           className="flag"
+  //           src={`${item}`}
+  //           alt="flag logo"
+  //         />
+  //       ))}
+  //       city={item.city}
+  //       country={item.country}
+  //     />
+  //   ));
+
+  //   return <React.Fragment>{renderTrainings}</React.Fragment>;
+  // }
+
+  // TrainingCardFull
+
   render() {
-    const renderTrainings = this.state.trainingData.map(item => {
+    const renderTrainingCardFull = this.state.trainingData.map(item => {
       return (
-        <TrainingCard
+        <TrainingCardFull
           id={item.id}
           logo={item.logo}
-          nameTraining={item.nameTraining}
           descriptionTraining={item.descriptionTraining}
-          dateTraining={item.dateTraining}
-          eligibleCountries={item.eligibleCountries.map(item => {
-            return (
-              <img
-                key={`${item}`}
-                className="flag"
-                src={`${item}`}
-                alt="flag logo"
-              />
-            );
-          })}
           city={item.city}
           country={item.country}
+          dateTraining={item.dateTraining}
+          eligibleCountries={item.eligibleCountries.map((item, i) => (
+            <img className="flag" key={i} src={`${item}`} alt={item} />
+          ))}
+          description1={item.description1}
+          description2={item.description2}
+          costs={item.costs.map(item => (
+            <li>{item}</li>
+          ))}
+          deadline={item.deadline}
+          infoletter={item.infoletter}
+          applicationForm={item.applicationForm}
+          calendar={item.calendar}
+          mail={item.mail}
+          comment={item.comment}
         />
       );
     });
-
-    return <div>{renderTrainings}</div>;
+    return <React.Fragment>{renderTrainingCardFull}</React.Fragment>;
   }
 }
 

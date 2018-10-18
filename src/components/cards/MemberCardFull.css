@@ -1,11 +1,11 @@
-.organisationCard > * > * {
+.memberCard > * > * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   line-height: 1.5;
 }
 
-.organisationCard {
+.memberCard {
   margin-bottom: 3px;
   width: 950px;
   min-height: 150px;
@@ -15,28 +15,29 @@
   background-color: #ffffff;
 }
 
-.organisationCard__left {
+.memberCard__left {
   padding: 10px;
   flex: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.organisationCard__center {
+.memberCard__center {
   flex: 550px;
   display: flex;
   flex-flow: row wrap;
   align-content: space-around;
 }
-.organisationCard__right {
+.memberCard__right {
   flex: 250px;
   display: flex;
   flex-flow: row wrap;
   align-content: space-around;
 }
 
-.organisationCard__text {
+.memberCard__text {
   width: 100%;
+  padding-bottom: 15px;
 }
 
 .btn {
@@ -47,6 +48,12 @@
   background-color: #4a2b3a;
 }
 
-.organisationCard__image {
+.memberCard__image {
   max-width: 100%;
+  align-self: flex-start;
+}
+
+.phoneIcon {
+  width: 20px;
+  height: 20px;
 }

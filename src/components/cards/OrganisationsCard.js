@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import "./organisationsCard.css";
 
 // JSON link:
-// https://api.myjson.com/bins/qqkkk
+// https://api.myjson.com/bins/y9tb4
 
 const OrganisationsCard = ({
   id,

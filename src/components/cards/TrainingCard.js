@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./trainingCard.css";
 
 // JSON link:
-// https://api.myjson.com/bins/wjjpw
+// https://api.myjson.com/bins/1hfqi0
 
 const TrainingCard = ({
   id,
@@ -28,7 +28,7 @@ const TrainingCard = ({
       <p className="trainingCard__text">{descriptionTraining}</p>
       <p className="trainingCard__text">{dateTraining}</p>
       <p className="trainingCard__text">
-        Eligible Countries :{eligibleCountries}
+        Eligible Countries : {eligibleCountries}
       </p>
     </div>
 
