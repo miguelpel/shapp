@@ -5,6 +5,7 @@ import "./memberCard.css";
 // https://api.myjson.com/bins/cgmc0
 
 const MemberCard = ({
+  getCardId,
   id,
   photo,
   name,
@@ -14,7 +15,7 @@ const MemberCard = ({
   organisation,
   position
 }) => (
-  <div key={id} className="memberCard">
+  <div onClick={getCardId} key={id} className="memberCard">
     <div className="memberCard__left">
       <img className="memberCard__image" src={`${photo}`} alt={`${name}`} />
     </div>
