@@ -44,41 +44,12 @@ class MembersPage extends PageContainer {
 
   render() {
     if (this.state.uniqueID === null) {
-      return this.state.membersData.map(item => (
-        <MemberCard
-          onClick={() => this.getUniqueID(item)}
-          id={item.id}
-          photo={item.photo}
-          surname={item.surname}
-          name={item.name}
-          telephone={item.telephone}
-          address={item.address.map(address => `${address} `)}
-          organisation={item.organisation}
-          position={item.position}
-        />
+      return this.state.membersData.map(card => (
+        <MemberCard onClick={() => this.getUniqueID(card)} card={card} />
       ));
     } else {
-      const { uniqueID } = this.state;
       return (
-        <MemberCardFull
-          onClick={this.goBack}
-          id={uniqueID.id}
-          photo={uniqueID.photo}
-          name={uniqueID.name}
-          surname={uniqueID.surname}
-          address={uniqueID.address.map(address => `${address} `)}
-          postCode={uniqueID.postCode}
-          dateOfBirth={uniqueID.dateOfBirth}
-          phoneIcon={uniqueID.phoneIcon}
-          telephone={uniqueID.telephone}
-          telephone1={uniqueID.telephone1}
-          email={uniqueID.email}
-          website={uniqueID.website}
-          organisation={uniqueID.organisation}
-          organisationFeesPaid={uniqueID.organisationFeesPaid}
-          city={uniqueID.city}
-          country={uniqueID.country}
-        />
+        <MemberCardFull onClick={this.goBack} card={this.state.uniqueID} />
       );
     }
   }

@@ -44,52 +44,12 @@ class TrainingsPage extends PageContainer {
 
   render() {
     if (this.state.uniqueID === null) {
-      return this.state.trainingData.map(item => (
-        <TrainingCard
-          onClick={() => this.getUniqueID(item)}
-          key={item.id}
-          logo={item.logo}
-          nameTraining={item.nameTraining}
-          descriptionTraining={item.descriptionTraining}
-          dateTraining={item.dateTraining}
-          eligibleCountries={item.eligibleCountries.map(item => (
-            <img
-              key={`${item}`}
-              className="flag"
-              src={`${item}`}
-              alt="flag logo"
-            />
-          ))}
-          city={item.city}
-          country={item.country}
-        />
+      return this.state.trainingData.map(card => (
+        <TrainingCard onClick={() => this.getUniqueID(card)} card={card} />
       ));
     } else {
-      const { uniqueID } = this.state;
       return (
-        <TrainingCardFull
-          onClick={this.goBack}
-          id={uniqueID.id}
-          logo={uniqueID.logo}
-          descriptionTraining={uniqueID.descriptionTraining}
-          city={uniqueID.city}
-          country={uniqueID.country}
-          dateTraining={uniqueID.dateTraining}
-          eligibleCountries={uniqueID.eligibleCountries.map((item, i) => (
-            <img className="flag" key={i} src={`${item}`} alt={item} />
-          ))}
-          description1={uniqueID.description1}
-          description2={uniqueID.description2}
-          costs={uniqueID.costs.map(item => (
-            <li>{item}</li>
-          ))}
-          deadline={uniqueID.deadline}
-          infoletter={uniqueID.infoletter}
-          applicationForm={uniqueID.applicationForm}
-          calendar={uniqueID.calendar}
-          mail={uniqueID.mail}
-          comment={uniqueID.comment}
-        />
+        <TrainingCardFull onClick={this.goBack} card={this.state.uniqueID} />
       );
     }
   }

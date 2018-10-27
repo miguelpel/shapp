@@ -44,45 +44,14 @@ class OrganisationsPage extends PageContainer {
 
   render() {
     if (this.state.uniqueID === null) {
-      return this.state.organisationsData.map(item => (
-        <OrganisationsCard
-          onClick={() => this.getUniqueID(item)}
-          id={item.id}
-          organisationLogo={item.organisationLogo}
-          acronym={item.acronym}
-          telephone={item.telephone}
-          website={item.website}
-          city={item.city}
-          country={item.country}
-        />
+      return this.state.organisationsData.map(card => (
+        <OrganisationsCard onClick={() => this.getUniqueID(card)} card={card} />
       ));
     } else {
-      const { uniqueID } = this.state;
       return (
         <OrganisationsCardFull
           onClick={this.goBack}
-          key={uniqueID.id}
-          organisationLogo={uniqueID.organisationLogo}
-          acronym={uniqueID.acronym}
-          address={uniqueID.address}
-          postCode={uniqueID.postCode}
-          PObox={uniqueID.PObox}
-          referee={uniqueID.referee}
-          telephone={uniqueID.telephone}
-          telephone1={uniqueID.telephone1}
-          website={uniqueID.website}
-          organisationType={uniqueID.organisationType}
-          PICnumber={uniqueID.PICnumber}
-          nationalId={uniqueID.nationalId}
-          cedex={uniqueID.cedex}
-          department={uniqueID.department}
-          fax={uniqueID.fax}
-          fullLegalName={uniqueID.fullLegalName}
-          city={uniqueID.city}
-          country={uniqueID.country}
-          refereePosition={uniqueID.refereePosition}
-          mail={uniqueID.mail}
-          profit={uniqueID.profit}
+          card={this.state.uniqueID}
         />
       );
     }
