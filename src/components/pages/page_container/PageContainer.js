@@ -19,7 +19,7 @@ class PageContainer extends Component {
       results: 0,
       pageBodyDisplay: "cards",
       pageData: [],
-      uniqId: ""
+      uniqId: null
     };
     // pageBodyStatus =  "cards", "uniqCard", "form", to allow the different display of the pageBody
   }
@@ -65,7 +65,7 @@ class PageContainer extends Component {
       top: "0",
       backgroundColor: "#ebebeb",
       width: "80%",
-      height: "100vh"
+      minHeight: "100vh"
     };
     // console.log("page container rendering");
     // console.log(this.state.pageData);
@@ -86,7 +86,6 @@ class PageContainer extends Component {
           pageName={this.state.pageName}
           pageData={this.state.pageData}
           pageBodyDisplay={this.state.pageBodyDisplay}
-          uniqId={this.state.uniqId}
         />
       </div>
     );

@@ -35,6 +35,7 @@ class PageBody extends Component {
       case "uniqCard":
         //code block
         return <UniqCard id="placeholder" />;
+
       case "cards":
         //code block
         return (
@@ -47,6 +48,7 @@ class PageBody extends Component {
       case "form":
         //code block
         return <Form id="placeholder" />;
+
       default:
         //code block
         return <div>PageBody component Went Wrong</div>;
@@ -60,7 +62,7 @@ class PageBody extends Component {
       top: "0",
       backgroundColor: "#ebebeb",
       width: "80%",
-      height: "100vh"
+      minHeight: "100vh"
     };
 
     // console.log("pageBody renders")

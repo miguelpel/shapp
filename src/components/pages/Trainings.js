@@ -15,7 +15,8 @@ class TrainingsPage extends PageContainer {
       results: 0,
       data: null,
       trainingUrl: "https://api.myjson.com/bins/1hfqi0",
-      trainingData: []
+      trainingData: [],
+      uniqueID: null
     };
   }
 
@@ -29,60 +30,68 @@ class TrainingsPage extends PageContainer {
       });
   }
 
-  // render() {
-  //   const renderTrainings = this.state.trainingData.map(item => (
-  //     <TrainingCard
-  //       id={item.id}
-  //       logo={item.logo}
-  //       nameTraining={item.nameTraining}
-  //       descriptionTraining={item.descriptionTraining}
-  //       dateTraining={item.dateTraining}
-  //       eligibleCountries={item.eligibleCountries.map(item => (
-  //         <img
-  //           key={`${item}`}
-  //           className="flag"
-  //           src={`${item}`}
-  //           alt="flag logo"
-  //         />
-  //       ))}
-  //       city={item.city}
-  //       country={item.country}
-  //     />
-  //   ));
+  getUniqueID = value => {
+    this.setState(prevState => ({
+      uniqueID: (prevState.uniqueID = value)
+    }));
+  };
 
-  //   return <React.Fragment>{renderTrainings}</React.Fragment>;
-  // }
-
-  // TrainingCardFull
+  goBack = () => {
+    this.setState(prevState => ({
+      uniqueID: (prevState.uniqueID = null)
+    }));
+  };
 
   render() {
-    const renderTrainingCardFull = this.state.trainingData.map(item => {
-      return (
-        <TrainingCardFull
-          id={item.id}
+    if (this.state.uniqueID === null) {
+      return this.state.trainingData.map(item => (
+        <TrainingCard
+          onClick={() => this.getUniqueID(item)}
+          key={item.id}
           logo={item.logo}
+          nameTraining={item.nameTraining}
           descriptionTraining={item.descriptionTraining}
+          dateTraining={item.dateTraining}
+          eligibleCountries={item.eligibleCountries.map(item => (
+            <img
+              key={`${item}`}
+              className="flag"
+              src={`${item}`}
+              alt="flag logo"
+            />
+          ))}
           city={item.city}
           country={item.country}
-          dateTraining={item.dateTraining}
-          eligibleCountries={item.eligibleCountries.map((item, i) => (
+        />
+      ));
+    } else {
+      const { uniqueID } = this.state;
+      return (
+        <TrainingCardFull
+          onClick={this.goBack}
+          id={uniqueID.id}
+          logo={uniqueID.logo}
+          descriptionTraining={uniqueID.descriptionTraining}
+          city={uniqueID.city}
+          country={uniqueID.country}
+          dateTraining={uniqueID.dateTraining}
+          eligibleCountries={uniqueID.eligibleCountries.map((item, i) => (
             <img className="flag" key={i} src={`${item}`} alt={item} />
           ))}
-          description1={item.description1}
-          description2={item.description2}
-          costs={item.costs.map(item => (
+          description1={uniqueID.description1}
+          description2={uniqueID.description2}
+          costs={uniqueID.costs.map(item => (
             <li>{item}</li>
           ))}
-          deadline={item.deadline}
-          infoletter={item.infoletter}
-          applicationForm={item.applicationForm}
-          calendar={item.calendar}
-          mail={item.mail}
-          comment={item.comment}
+          deadline={uniqueID.deadline}
+          infoletter={uniqueID.infoletter}
+          applicationForm={uniqueID.applicationForm}
+          calendar={uniqueID.calendar}
+          mail={uniqueID.mail}
+          comment={uniqueID.comment}
         />
       );
-    });
-    return <React.Fragment>{renderTrainingCardFull}</React.Fragment>;
+    }
   }
 }
 

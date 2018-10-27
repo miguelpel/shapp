@@ -15,7 +15,8 @@ class OrganisationsPage extends PageContainer {
       results: 0,
       data: null,
       organisationsUrl: "https://api.myjson.com/bins/y9tb4",
-      organisationsData: []
+      organisationsData: [],
+      uniqueID: null
     };
   }
 
@@ -29,55 +30,62 @@ class OrganisationsPage extends PageContainer {
       });
   }
 
-  // render() {
-  //   const renderOrganisations = this.state.organisationsData.map(item => (
-  //     <OrganisationsCard
-  //       id={item.id}
-  //       organisationLogo={item.organisationLogo}
-  //       acronym={item.acronym}
-  //       telephone={item.telephone}
-  //       website={item.website}
-  //       city={item.city}
-  //       country={item.country}
-  //     />
-  //   ));
+  getUniqueID = value => {
+    this.setState(prevState => ({
+      uniqueID: (prevState.uniqueID = value)
+    }));
+  };
 
-  //   return <React.Fragment>{renderOrganisations}</React.Fragment>;
-  // }
-
-  // OrganisationsCardFull
+  goBack = () => {
+    this.setState(prevState => ({
+      uniqueID: (prevState.uniqueID = null)
+    }));
+  };
 
   render() {
-    const renderOrganisationsCardFull = this.state.organisationsData.map(
-      item => (
-        <OrganisationsCardFull
-          key={item.id}
+    if (this.state.uniqueID === null) {
+      return this.state.organisationsData.map(item => (
+        <OrganisationsCard
+          onClick={() => this.getUniqueID(item)}
+          id={item.id}
           organisationLogo={item.organisationLogo}
           acronym={item.acronym}
-          address={item.address}
-          postCode={item.postCode}
-          PObox={item.PObox}
-          referee={item.referee}
           telephone={item.telephone}
-          telephone1={item.telephone1}
           website={item.website}
-          organisationType={item.organisationType}
-          PICnumber={item.PICnumber}
-          nationalId={item.nationalId}
-          cedex={item.cedex}
-          department={item.department}
-          fax={item.fax}
-          fullLegalName={item.fullLegalName}
           city={item.city}
           country={item.country}
-          refereePosition={item.refereePosition}
-          mail={item.mail}
-          profit={item.profit}
         />
-      )
-    );
-
-    return <React.Fragment>{renderOrganisationsCardFull}</React.Fragment>;
+      ));
+    } else {
+      const { uniqueID } = this.state;
+      return (
+        <OrganisationsCardFull
+          onClick={this.goBack}
+          key={uniqueID.id}
+          organisationLogo={uniqueID.organisationLogo}
+          acronym={uniqueID.acronym}
+          address={uniqueID.address}
+          postCode={uniqueID.postCode}
+          PObox={uniqueID.PObox}
+          referee={uniqueID.referee}
+          telephone={uniqueID.telephone}
+          telephone1={uniqueID.telephone1}
+          website={uniqueID.website}
+          organisationType={uniqueID.organisationType}
+          PICnumber={uniqueID.PICnumber}
+          nationalId={uniqueID.nationalId}
+          cedex={uniqueID.cedex}
+          department={uniqueID.department}
+          fax={uniqueID.fax}
+          fullLegalName={uniqueID.fullLegalName}
+          city={uniqueID.city}
+          country={uniqueID.country}
+          refereePosition={uniqueID.refereePosition}
+          mail={uniqueID.mail}
+          profit={uniqueID.profit}
+        />
+      );
+    }
   }
 }
 

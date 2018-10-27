@@ -5,7 +5,7 @@ import "./trainingCard.css";
 // https://api.myjson.com/bins/1hfqi0
 
 const TrainingCard = ({
-  getCardId,
+  onClick,
   id,
   logo,
   nameTraining,
@@ -15,7 +15,7 @@ const TrainingCard = ({
   city,
   country
 }) => (
-  <div onClick={getCardId} key={id} className="trainingCard">
+  <div onClick={onClick} key={id} className="trainingCard">
     <div className="trainingCard__left">
       <img
         className="trainingCard__image"

@@ -57,3 +57,12 @@
   width: 20px;
   height: 20px;
 }
+
+.btnGoBack {
+  width: 250px;
+  margin: 20px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: #45303c;
+  color: white;
+}

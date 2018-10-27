@@ -31,7 +31,9 @@ const createTrainingsCards = data => {
     data.map(item => {
       let card = (
         <TrainingCard
-          getCardId={() => console.log(`TrainingCard current ID: ${item.id}`)}
+          onClick={() =>
+            console.log(`OrganisationsCard current ID: ${item.id}`)
+          }
           key={item.id}
           id={item.id}
           logo={item.logo}

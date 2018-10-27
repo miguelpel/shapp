@@ -2,6 +2,7 @@ import React from "react";
 import "./trainingCardFull.css";
 
 const TrainingCardFull = ({
+  onClick,
   id,
   logo,
   nameTraining,
@@ -21,6 +22,10 @@ const TrainingCardFull = ({
   comment
 }) => (
   <div key={id} className="trainingCardFull">
+    <button className="btnGoBack" onClick={onClick}>
+      Return to Training list
+    </button>
+
     <div className="trainingCardFull__column">
       <img
         className="trainingCardFull__image"
