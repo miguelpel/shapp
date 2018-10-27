@@ -22,7 +22,7 @@ const MemberCardFull = ({
 }) => (
   <div>
     <button onClick={onClick} className="btnGoBack" onClick={onClick}>
-      Return to Training list
+      Return to Members list
     </button>
 
     <div key={id} className="memberCard">

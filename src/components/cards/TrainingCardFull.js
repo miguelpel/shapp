@@ -23,7 +23,7 @@ const TrainingCardFull = ({
 }) => (
   <div key={id} className="trainingCardFull">
     <button className="btnGoBack" onClick={onClick}>
-      Return to Training list
+      Return to Trainings list
     </button>
 
     <div className="trainingCardFull__column">
