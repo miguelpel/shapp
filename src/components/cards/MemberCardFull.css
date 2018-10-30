@@ -5,14 +5,16 @@
   line-height: 1.5;
 }
 
-.memberCard {
+.memberCardFull {
   margin-bottom: 3px;
   width: 950px;
-  min-height: 150px;
-  display: flex;
   font-size: 18px;
   color: #787878;
   background-color: #ffffff;
+}
+
+.memberCard {
+  display: flex;
 }
 
 .memberCard__left {

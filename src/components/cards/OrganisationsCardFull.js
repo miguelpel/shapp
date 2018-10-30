@@ -2,12 +2,12 @@ import React from "react";
 import "./organisationsCardFull.css";
 
 const OrganisationsCardFull = ({ onClick, card }) => (
-  <div>
+  <div className="organisationsCardFull_wrapper">
     <button className="btnGoBack" onClick={onClick}>
       Return to Organisations list
     </button>
 
-    <div key={card.id} className="organisationsCardFull">
+    <div className="organisationsCardFull">
       <div className="organisationsCardFull__left">
         <img
           className="organisationsCardFull__img"

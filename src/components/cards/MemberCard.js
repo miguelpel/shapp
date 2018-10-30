@@ -18,7 +18,7 @@ const MemberCard = ({ onClick, card }) => (
       <p className="memberCard__text">{card.surname}</p>
       <p className="memberCard__text">{card.name}</p>
       <p className="memberCard__text">{card.telephone}</p>
-      <p className="memberCard__text">{card.address}</p>
+      <p className="memberCard__text">{card.address.map(item => `${item} `)}</p>
     </div>
 
     <div className="memberCard__right">

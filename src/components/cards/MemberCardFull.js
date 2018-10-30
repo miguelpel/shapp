@@ -2,12 +2,12 @@ import React from "react";
 import "./memberCardFull.css";
 
 const MemberCardFull = ({ onClick, card }) => (
-  <div>
+  <div className="memberCardFull">
     <button onClick={onClick} className="btnGoBack">
       Return to Members list
     </button>
 
-    <div key={card.id} className="memberCard">
+    <div className="memberCard">
       <div className="memberCard__left">
         <img
           className="memberCard__image"
@@ -19,7 +19,9 @@ const MemberCardFull = ({ onClick, card }) => (
       <div className="memberCard__center">
         <p className="memberCard__text">{card.name}</p>
         <p className="memberCard__text">{card.surname}</p>
-        <p className="memberCard__text">{card.address}</p>
+        <p className="memberCard__text">
+          {card.address.map(item => `${item} `)}
+        </p>
         <p className="memberCard__text">{card.postCode}</p>
         <p className="memberCard__text">{card.dateOfBirth}</p>
         <p className="memberCard__text">

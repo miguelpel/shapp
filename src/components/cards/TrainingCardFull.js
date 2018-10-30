@@ -2,7 +2,7 @@ import React from "react";
 import "./trainingCardFull.css";
 
 const TrainingCardFull = ({ onClick, card }) => (
-  <div key={card.id} className="trainingCardFull">
+  <div className="trainingCardFull">
     <button className="btnGoBack" onClick={onClick}>
       Return to Trainings list
     </button>
