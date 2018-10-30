@@ -3,20 +3,22 @@ import PageContainer from "./PageContainer";
 import React from "react";
 import TrainingCard from "../cards/TrainingCard";
 import TrainingCardFull from "../cards/TrainingCardFull";
+import Header from "../search/Header";
 
 class TrainingsPage extends PageContainer {
   constructor(props) {
     super(props);
     this.state = {
       pageName: "trainings",
-      url: "https://api.myjson.com/bins/19781g",
-      filters: [],
-      searchWord: null,
-      results: 0,
-      data: null,
+      // url: "https://api.myjson.com/bins/19781g",
+      // filters: [],
+      // searchWord: null,
+      // results: 0,
+      // data: null,
       trainingUrl: "https://api.myjson.com/bins/1hfqi0",
       trainingData: [],
-      uniqueID: null
+      uniqueID: null,
+      searchTerm: ""
     };
   }
 
@@ -42,17 +44,38 @@ class TrainingsPage extends PageContainer {
     }));
   };
 
+  onSearchTerm = event => {
+    this.setState({
+      searchTerm: event.target.value
+    });
+  };
+
   render() {
-    if (this.state.uniqueID === null) {
-      return this.state.trainingData.map(card => (
-        <TrainingCard onClick={() => this.getUniqueID(card)} card={card} />
-      ));
-    } else {
+    const { trainingData, uniqueID, searchTerm } = this.state;
+
+    if (uniqueID === null) {
       return (
-        <TrainingCardFull onClick={this.goBack} card={this.state.uniqueID} />
+        <div>
+          <Header
+            onChange={this.onSearchTerm}
+            value={searchTerm}
+            counter={`${
+              trainingData.filter(isSearched(searchTerm)).length
+            } Training(s)`}
+          />
+
+          {trainingData.filter(isSearched(searchTerm)).map(card => (
+            <TrainingCard onClick={() => this.getUniqueID(card)} card={card} />
+          ))}
+        </div>
       );
+    } else {
+      return <TrainingCardFull onClick={this.goBack} card={uniqueID} />;
     }
   }
 }
+
+const isSearched = searchTerm => card =>
+  card.nameTraining.toLowerCase().includes(searchTerm.toLowerCase());
 
 export default TrainingsPage;

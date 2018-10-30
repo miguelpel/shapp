@@ -3,20 +3,22 @@ import PageContainer from "./PageContainer";
 import React from "react";
 import OrganisationsCard from "../cards/OrganisationsCard";
 import OrganisationsCardFull from "../cards/OrganisationsCardFull";
+import Header from "../search/Header";
 
 class OrganisationsPage extends PageContainer {
   constructor(props) {
     super(props);
     this.state = {
       pageName: "organisations",
-      url: "https://api.myjson.com/bins/19781g",
-      filters: [],
-      searchWord: null,
-      results: 0,
-      data: null,
+      // url: "https://api.myjson.com/bins/19781g",
+      // filters: [],
+      // searchWord: null,
+      // results: 0,
+      // data: null,
       organisationsUrl: "https://api.myjson.com/bins/y9tb4",
       organisationsData: [],
-      uniqueID: null
+      uniqueID: null,
+      searchTerm: ""
     };
   }
 
@@ -42,20 +44,41 @@ class OrganisationsPage extends PageContainer {
     }));
   };
 
+  onSearchTerm = event => {
+    this.setState({
+      searchTerm: event.target.value
+    });
+  };
+
   render() {
-    if (this.state.uniqueID === null) {
-      return this.state.organisationsData.map(card => (
-        <OrganisationsCard onClick={() => this.getUniqueID(card)} card={card} />
-      ));
-    } else {
+    const { organisationsData, uniqueID, searchTerm } = this.state;
+
+    if (uniqueID === null) {
       return (
-        <OrganisationsCardFull
-          onClick={this.goBack}
-          card={this.state.uniqueID}
-        />
+        <div>
+          <Header
+            onChange={this.onSearchTerm}
+            value={searchTerm}
+            counter={`${
+              organisationsData.filter(isSearched(searchTerm)).length
+            } Organisation(s)`}
+          />
+
+          {organisationsData.filter(isSearched(searchTerm)).map(card => (
+            <OrganisationsCard
+              onClick={() => this.getUniqueID(card)}
+              card={card}
+            />
+          ))}
+        </div>
       );
+    } else {
+      return <OrganisationsCardFull onClick={this.goBack} card={uniqueID} />;
     }
   }
 }
+
+const isSearched = searchTerm => card =>
+  card.acronym.toLowerCase().includes(searchTerm.toLowerCase());
 
 export default OrganisationsPage;
