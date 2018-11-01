@@ -1,4 +1,3 @@
 import { ADD_DATA } from "../constants/action-types";
 
-export const adddata = data => ({ type: "ADD_DATA", data });
-
+export const addCardsData = data => ({ type: "ADD_DATA", data });

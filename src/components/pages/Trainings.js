@@ -3,7 +3,10 @@ import PageContainer from "./PageContainer";
 import React from "react";
 import TrainingCard from "../cards/TrainingCard";
 import TrainingCardFull from "../cards/TrainingCardFull";
+
 import Header from "../search/Header";
+import store from "../../redux/store";
+import { addCardsData } from "../../redux/actions";
 
 class TrainingsPage extends PageContainer {
   constructor(props) {
@@ -20,15 +23,24 @@ class TrainingsPage extends PageContainer {
       uniqueID: null,
       searchTerm: ""
     };
+    console.log(this.state);
   }
+
+  // componentDidMount() {
+  //   fetch(this.state.trainingUrl)
+  //     .then(result => result.json())
+  //     .then(result => {
+  //       this.setState({
+  //         trainingData: result
+  //       });
+  //     });
+  // }
 
   componentDidMount() {
     fetch(this.state.trainingUrl)
       .then(result => result.json())
       .then(result => {
-        this.setState({
-          trainingData: result
-        });
+        store.dispatch(addCardsData(result));
       });
   }
 
@@ -77,5 +89,11 @@ class TrainingsPage extends PageContainer {
 
 const isSearched = searchTerm => card =>
   card.nameTraining.toLowerCase().includes(searchTerm.toLowerCase());
+
+const mapStateToProps = state => {
+  return {
+    trainingData: state.cardsData
+  };
+};
 
 export default TrainingsPage;
