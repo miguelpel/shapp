@@ -41,11 +41,19 @@ class PageContainer extends Component {
         })
     }
 
-    addFilter(filter){
+    addFilter = (filter) => {
         // the filter is an object containing the category and the option.
-        this.setState( (prevstate) => ({
-            filters: [...prevstate.filter, filter]
-        }))
+        console.log('add filter')
+        console.log(filter)
+        if (this.state.filters.length <= 0) {
+            this.setState({
+                filters: [filter]
+            })
+        } else {
+            this.setState(prevstate => ({
+                filters: [...prevstate.filters, filter]
+            }))
+        }
     }
 
     handleSearch(word){
@@ -61,7 +69,8 @@ class PageContainer extends Component {
             top: '0',
             backgroundColor: '#ebebeb',
             width: '80%',
-            height:'100vh'
+            height:'100vh',
+            overflow: 'hidden'
         } 
         console.log("page container rendering");
         console.log(this.state.pageData);
@@ -71,7 +80,7 @@ class PageContainer extends Component {
                 <PageHeader
                    pageName={this.state.pageName}
                    pageData={this.state.pageData}
-                   result={this.state.results}
+                   results={this.state.results}
                    filters={this.state.filters}
                    searchWord={this.state.searchWord}
 

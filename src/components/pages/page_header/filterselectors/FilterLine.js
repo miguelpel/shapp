@@ -15,7 +15,8 @@ class FilterLine extends Component {
             category: null,
             title: null,
             value: null,
-            options: []
+            options: [],
+            addFilter:this.props.addFilter
         }
     }
 
@@ -38,11 +39,12 @@ class FilterLine extends Component {
     sendFilter = (filterObj) => {
         //Get the informations category and value,
         // and send them to the pageContainer, to filter the Cards
-        console.log("send:")
-        console.log({
-            title: this.state.title,
-            value: this.state.value
-        });
+        this.state.addFilter(filterObj);
+        // console.log("send:")
+        // console.log({
+        //     title: this.state.title,
+        //     value: this.state.value
+        // });
     }
 
     fetchOptions = () => {
@@ -118,7 +120,8 @@ class FilterLine extends Component {
         const style={
             marginTop: '5px',
             display: 'flex',
-            flexDirection: 'row'
+            flexDirection: 'row',
+            margin: '3px 10px',
         }
         return(
             <div style={style}>

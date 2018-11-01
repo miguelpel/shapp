@@ -91,6 +91,7 @@ class Search extends Component {
       fontFamily: 'Roboto-Light',
       fontSize: '1em',
       padding: '9px',
+      margin: '3px 10px',
       border: '1px solid #CCCCCC',
       borderRadius: '5px',
       width: '80%'
