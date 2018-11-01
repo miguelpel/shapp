@@ -55,15 +55,18 @@ class PageBody extends Component {
     }
   };
 
-  render() {
-    const pageStyle = {
-      position: "fixed",
-      right: "0",
-      top: "0",
-      backgroundColor: "#ebebeb",
-      width: "80%",
-      minHeight: "100vh"
-    };
+
+    render(){
+        const pageStyle = {
+            position: 'fixed',
+            top: '145px',
+            right: '0',
+            backgroundColor: '#ebebeb',
+            width: '80%',
+            height:'100vh',
+            overflowY: 'scroll'
+        }
+
 
     // console.log("pageBody renders")
     // console.log(this.state.pageData);

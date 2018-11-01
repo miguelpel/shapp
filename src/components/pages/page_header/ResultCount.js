@@ -1,8 +1,11 @@
 import React from 'react';
 
 const ResultCount = (props) => {
+    const style = {
+        margin: '5px 15px'
+    }
     return(
-        <span>{props.results} {props.tag.slice(0, -1)}(s)</span>
+        <span style={style}>{props.results} {props.tag.slice(0, -1)}(s)</span>
     )
 }
 

@@ -39,18 +39,28 @@ class PageContainer extends Component {
       .catch(error => console.log(error.message));
   }
 
+
+    addFilter = (filter) => {
+        // the filter is an object containing the category and the option.
+        console.log('add filter')
+        console.log(filter)
+        if (this.state.filters.length <= 0) {
+            this.setState({
+                filters: [filter]
+            })
+        } else {
+            this.setState(prevstate => ({
+                filters: [...prevstate.filters, filter]
+            }))
+        }
+    }
+
   changeBodyDisplay = status => {
     this.setState({
       pageBodyDisplay: status
     });
   };
 
-  addFilter(filter) {
-    // the filter is an object containing the category and the option.
-    this.setState(prevstate => ({
-      filters: [...prevstate.filter, filter]
-    }));
-  }
 
   handleSearch(word) {
     this.setState({
@@ -58,15 +68,17 @@ class PageContainer extends Component {
     });
   }
 
-  render() {
-    const pageStyle = {
-      position: "fixed",
-      right: "0",
-      top: "0",
-      backgroundColor: "#ebebeb",
-      width: "80%",
-      minHeight: "100vh"
-    };
+
+    render(){
+        const pageStyle = {
+            position: 'fixed',
+            right: '0',
+            top: '0',
+            backgroundColor: '#ebebeb',
+            width: '80%',
+            height:'100vh',
+            overflow: 'hidden'
+        } 
     // console.log("page container rendering");
     // console.log(this.state.pageData);
     // console.log(this.state.results);
