@@ -1,7 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import AppJon from "./AppJon";
-import App from "./App";
+import App from "./AppJon";
 
 ReactDOM.render(<App />, document.getElementById("root"));
-

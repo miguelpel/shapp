@@ -1,0 +1,17 @@
+.header {
+  background-color: #ebebeb;
+}
+
+.header__input {
+  width: 650px;
+  margin: 20px;
+  padding: 7px;
+  font-size: 18px;
+  color: #aeaeae;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.header__counter {
+  margin: 20px;
+}

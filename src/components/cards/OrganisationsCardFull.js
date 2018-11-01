@@ -1,72 +1,67 @@
 import React from "react";
 import "./organisationsCardFull.css";
 
-const OrganisationsCardFull = ({
-  id,
-  organisationLogo,
-  acronym,
-  telephone,
-  website,
-  city,
-  country,
-  fullLegalName,
-  address,
-  postCode,
-  PObox,
-  referee,
-  refereePosition,
-  telephone1,
-  mail,
-  organisationType,
-  profit,
-  PICnumber,
-  nationalId,
-  cedex,
-  department,
-  fax
-}) => (
-  <div key={id} className="organisationsCardFull">
-    <div className="organisationsCardFull__left">
-      <img
-        className="organisationsCardFull__img"
-        src={`${organisationLogo}`}
-        alt={acronym}
-      />
-    </div>
+const OrganisationsCardFull = ({ onClick, card }) => (
+  <div className="organisationsCardFull_wrapper">
+    <button className="btnGoBack" onClick={onClick}>
+      Return to Organisations list
+    </button>
 
-    <div className="organisationsCardFull__center">
-      <p className="organisationsCardFull__text">Acronym: {acronym}</p>
-      <p className="organisationsCardFull__text">Address: {address}</p>
-      <p className="organisationsCardFull__text">Post code: {postCode}</p>
-      <p className="organisationsCardFull__text">P.O. box: {PObox}</p>
-      <p className="organisationsCardFull__text">Referee: {referee}</p>
-      <p className="organisationsCardFull__text">Telephone 1: {telephone}</p>
-      <p className="organisationsCardFull__text">Telephone 2: {telephone1}</p>
-      <p className="organisationsCardFull__text">{website}</p>
-      <p className="organisationsCardFull__text">
-        Organisation Type: {organisationType}
-      </p>
-      <p className="organisationsCardFull__text">PIC number: {PICnumber}</p>
-      <p className="organisationsCardFull__text">National ID: {nationalId}</p>
-      <p className="organisationsCardFull__text">CEDEX: {cedex}</p>
-      <p className="organisationsCardFull__text">Department: {department}</p>
-      <p className="organisationsCardFull__text">Fax: {fax}</p>
-    </div>
+    <div className="organisationsCardFull">
+      <div className="organisationsCardFull__left">
+        <img
+          className="organisationsCardFull__img"
+          src={`${card.organisationLogo}`}
+          alt={card.acronym}
+        />
+      </div>
 
-    <div className="organisationsCardFull__right">
-      <p className="organisationsCardFull__text">{fullLegalName}</p>
-      <p className="organisationsCardFull__text">{city}</p>
-      <p className="organisationsCardFull__text">{country}</p>
-      <p className="organisationsCardFull__text">
-        Referee's position: {refereePosition}
-      </p>
-      <p className="organisationsCardFull__text">
-        {mail}{" "}
-        <a className="btn" href={`mailto:${mail}`}>
-          Send mail
-        </a>
-      </p>
-      <p className="organisationsCardFull__text">{profit}</p>
+      <div className="organisationsCardFull__center">
+        <p className="organisationsCardFull__text">Acronym: {card.acronym}</p>
+        <p className="organisationsCardFull__text">Address: {card.address}</p>
+        <p className="organisationsCardFull__text">
+          Post code: {card.postCode}
+        </p>
+        <p className="organisationsCardFull__text">P.O. box: {card.PObox}</p>
+        <p className="organisationsCardFull__text">Referee: {card.referee}</p>
+        <p className="organisationsCardFull__text">
+          Telephone 1: {card.telephone}
+        </p>
+        <p className="organisationsCardFull__text">
+          Telephone 2: {card.telephone1}
+        </p>
+        <p className="organisationsCardFull__text">{card.website}</p>
+        <p className="organisationsCardFull__text">
+          Organisation Type: {card.organisationType}
+        </p>
+        <p className="organisationsCardFull__text">
+          PIC number: {card.PICnumber}
+        </p>
+        <p className="organisationsCardFull__text">
+          National ID: {card.nationalId}
+        </p>
+        <p className="organisationsCardFull__text">CEDEX: {card.cedex}</p>
+        <p className="organisationsCardFull__text">
+          Department: {card.department}
+        </p>
+        <p className="organisationsCardFull__text">Fax: {card.fax}</p>
+      </div>
+
+      <div className="organisationsCardFull__right">
+        <p className="organisationsCardFull__text">{card.fullLegalName}</p>
+        <p className="organisationsCardFull__text">{card.city}</p>
+        <p className="organisationsCardFull__text">{card.country}</p>
+        <p className="organisationsCardFull__text">
+          Referee's position: {card.refereePosition}
+        </p>
+        <p className="organisationsCardFull__text">
+          {card.mail}{" "}
+          <a className="btn" href={`mailto:${card.mail}`}>
+            Send mail
+          </a>
+        </p>
+        <p className="organisationsCardFull__text">{card.profit}</p>
+      </div>
     </div>
   </div>
 );

@@ -3,19 +3,22 @@ import PageContainer from "./PageContainer";
 import React from "react";
 import MemberCard from "../cards/MemberCard";
 import MemberCardFull from "../cards/MemberCardFull";
+import Header from "../search/Header";
 
 class MembersPage extends PageContainer {
   constructor(props) {
     super(props);
     this.state = {
       pageName: "members",
-      url: "https://api.myjson.com/bins/19781g",
-      filters: [],
-      searchWord: null,
-      results: 0,
-      data: null,
+      // url: "https://api.myjson.com/bins/19781g",
+      // filters: [],
+      // searchWord: null,
+      // results: 0,
+      // data: null,
       membersUrl: "https://api.myjson.com/bins/cgmc0",
-      membersData: []
+      membersData: [],
+      uniqueID: null,
+      searchTerm: ""
     };
   }
 
@@ -29,51 +32,50 @@ class MembersPage extends PageContainer {
       });
   }
 
-  // render() {
-  //   const renderMembers = this.state.membersData.map(item => (
-  //     <MemberCard
-  //       id={item.id}
-  //       photo={item.photo}
-  //       surname={item.surname}
-  //       name={item.name}
-  //       telephone={item.telephone}
-  //       address={item.address.map(address => `${address} `)}
-  //       organisation={item.organisation}
-  //       position={item.position}
-  //     />
-  //   ));
+  getUniqueID = value => {
+    this.setState(prevState => ({
+      uniqueID: (prevState.uniqueID = value)
+    }));
+  };
 
-  //   return <React.Fragment>{renderMembers}</React.Fragment>;
-  // }
+  goBack = () => {
+    this.setState(prevState => ({
+      uniqueID: (prevState.uniqueID = null)
+    }));
+  };
 
-  // MemberCardFull rendering
+  onSearchTerm = event => {
+    this.setState({
+      searchTerm: event.target.value
+    });
+  };
 
   render() {
-    const renderMemberCardFull = this.state.membersData.map(item => {
-      return (
-        <MemberCardFull
-          id={item.id}
-          photo={item.photo}
-          name={item.name}
-          surname={item.surname}
-          address={item.address.map(address => `${address} `)}
-          postCode={item.postCode}
-          dateOfBirth={item.dateOfBirth}
-          phoneIcon={item.phoneIcon}
-          telephone={item.telephone}
-          telephone1={item.telephone1}
-          email={item.email}
-          website={item.website}
-          organisation={item.organisation}
-          organisationFeesPaid={item.organisationFeesPaid}
-          city={item.city}
-          country={item.country}
-        />
-      );
-    });
+    const { membersData, uniqueID, searchTerm } = this.state;
 
-    return <React.Fragment>{renderMemberCardFull}</React.Fragment>;
+    if (uniqueID === null) {
+      return (
+        <div>
+          <Header
+            onChange={this.onSearchTerm}
+            value={searchTerm}
+            counter={`${
+              membersData.filter(isSearched(searchTerm)).length
+            } Member(s)`}
+          />
+
+          {membersData.filter(isSearched(searchTerm)).map(card => (
+            <MemberCard onClick={() => this.getUniqueID(card)} card={card} />
+          ))}
+        </div>
+      );
+    } else {
+      return <MemberCardFull onClick={this.goBack} card={uniqueID} />;
+    }
   }
 }
+
+const isSearched = searchTerm => card =>
+  card.name.toLowerCase().includes(searchTerm.toLowerCase());
 
 export default MembersPage;

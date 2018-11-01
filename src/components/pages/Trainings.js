@@ -3,19 +3,22 @@ import PageContainer from "./PageContainer";
 import React from "react";
 import TrainingCard from "../cards/TrainingCard";
 import TrainingCardFull from "../cards/TrainingCardFull";
+import Header from "../search/Header";
 
 class TrainingsPage extends PageContainer {
   constructor(props) {
     super(props);
     this.state = {
       pageName: "trainings",
-      url: "https://api.myjson.com/bins/19781g",
-      filters: [],
-      searchWord: null,
-      results: 0,
-      data: null,
+      // url: "https://api.myjson.com/bins/19781g",
+      // filters: [],
+      // searchWord: null,
+      // results: 0,
+      // data: null,
       trainingUrl: "https://api.myjson.com/bins/1hfqi0",
-      trainingData: []
+      trainingData: [],
+      uniqueID: null,
+      searchTerm: ""
     };
   }
 
@@ -29,61 +32,50 @@ class TrainingsPage extends PageContainer {
       });
   }
 
-  // render() {
-  //   const renderTrainings = this.state.trainingData.map(item => (
-  //     <TrainingCard
-  //       id={item.id}
-  //       logo={item.logo}
-  //       nameTraining={item.nameTraining}
-  //       descriptionTraining={item.descriptionTraining}
-  //       dateTraining={item.dateTraining}
-  //       eligibleCountries={item.eligibleCountries.map(item => (
-  //         <img
-  //           key={`${item}`}
-  //           className="flag"
-  //           src={`${item}`}
-  //           alt="flag logo"
-  //         />
-  //       ))}
-  //       city={item.city}
-  //       country={item.country}
-  //     />
-  //   ));
+  getUniqueID = value => {
+    this.setState(prevState => ({
+      uniqueID: (prevState.uniqueID = value)
+    }));
+  };
 
-  //   return <React.Fragment>{renderTrainings}</React.Fragment>;
-  // }
+  goBack = () => {
+    this.setState(prevState => ({
+      uniqueID: (prevState.uniqueID = null)
+    }));
+  };
 
-  // TrainingCardFull
+  onSearchTerm = event => {
+    this.setState({
+      searchTerm: event.target.value
+    });
+  };
 
   render() {
-    const renderTrainingCardFull = this.state.trainingData.map(item => {
+    const { trainingData, uniqueID, searchTerm } = this.state;
+
+    if (uniqueID === null) {
       return (
-        <TrainingCardFull
-          id={item.id}
-          logo={item.logo}
-          descriptionTraining={item.descriptionTraining}
-          city={item.city}
-          country={item.country}
-          dateTraining={item.dateTraining}
-          eligibleCountries={item.eligibleCountries.map((item, i) => (
-            <img className="flag" key={i} src={`${item}`} alt={item} />
+        <div>
+          <Header
+            onChange={this.onSearchTerm}
+            value={searchTerm}
+            counter={`${
+              trainingData.filter(isSearched(searchTerm)).length
+            } Training(s)`}
+          />
+
+          {trainingData.filter(isSearched(searchTerm)).map(card => (
+            <TrainingCard onClick={() => this.getUniqueID(card)} card={card} />
           ))}
-          description1={item.description1}
-          description2={item.description2}
-          costs={item.costs.map(item => (
-            <li>{item}</li>
-          ))}
-          deadline={item.deadline}
-          infoletter={item.infoletter}
-          applicationForm={item.applicationForm}
-          calendar={item.calendar}
-          mail={item.mail}
-          comment={item.comment}
-        />
+        </div>
       );
-    });
-    return <React.Fragment>{renderTrainingCardFull}</React.Fragment>;
+    } else {
+      return <TrainingCardFull onClick={this.goBack} card={uniqueID} />;
+    }
   }
 }
+
+const isSearched = searchTerm => card =>
+  card.nameTraining.toLowerCase().includes(searchTerm.toLowerCase());
 
 export default TrainingsPage;

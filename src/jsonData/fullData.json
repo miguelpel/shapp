@@ -1,0 +1,353 @@
+{
+  "trainings": [
+    {
+      "id": 1, 
+      "logo": "./images/trainingCard/logo-1.png", 
+      "nameTraining": "Name 1",
+      "descriptionTraining": "description 1",
+      "dateTraining": "00.00.0000",
+      "eligibleCountries": [
+        "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
+      ],
+      "city": "City name 1", "country": "Country name 1",
+  
+      "description1": "The notorious Coaching training is back. Volounteer Path Guides specifically is aiming to increase the quality of youth work, by focusing on coaching and menthoring of volunteers. The challenge is to be able to coach and/or mentor young people, especially when it comes to topics such as employability, employment or entrepreneurship. In this 8 days journey you will get the chance to get a hands on experience on coaching though using coaching skills, from some exercises to practice techniques fo full coaching sessions.",
+      "description2": "Solidarity Mission offers 3 spots for motivated people above 18 years old that they work with young people and they are willing to improve their professional performance, by developing their own coaching and mentoring attitude and toolkit.",
+      "costs": ["Accommodation, food are covered 100%", "Travel costs covered 100% up to the maximum reimbursement 180 &#8364;", "Participation fee on the hosting organization: 60 &#8364;"],
+      "deadline": "20 February 2018",
+      "infoletter": "http://bit.ly/VPG-info",
+      "applicationForm": "http://bit.ly/VPG-apply",
+      "calendar": "http://bit.ly/SynergyGreeceCalendar",
+      "mail": "training@solidaritymission.org",
+      "comment": "This project is organized by our friends and partners Qualtimpact, it is delivered by our P and is funded by Erasmus+. We highly appreciate when you share this information within your networks and with people who might be interest in it"
+    },
+  
+    {
+      "id": 2,
+      "logo": "./images/trainingCard/logo-2.png",
+      "nameTraining": "Name 2",
+      "descriptionTraining": "description 2",
+      "dateTraining": "00.00.0000",
+      "eligibleCountries": [
+        "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
+      ],
+      "city": "City name 2", "country": "Country name 2",
+  
+      "description1": "The notorious Coaching training is back. Volounteer Path Guides specifically is aiming to increase the quality of youth work, by focusing on coaching and menthoring of volunteers. The challenge is to be able to coach and/or mentor young people, especially when it comes to topics such as employability, employment or entrepreneurship. In this 8 days journey you will get the chance to get a hands on experience on coaching though using coaching skills, from some exercises to practice techniques fo full coaching sessions.",
+      "description2": "Solidarity Mission offers 3 spots for motivated people above 18 years old that they work with young people and they are willing to improve their professional performance, by developing their own coaching and mentoring attitude and toolkit.",
+      "costs": ["Accommodation, food are covered 100%", "Travel costs covered 100% up to the maximum reimbursement 180 &#8364;", "Participation fee on the hosting organization: 60 &#8364;"],
+      "deadline": "20 February 2018",
+      "infoletter": "http://bit.ly/VPG-info",
+      "applicationForm": "http://bit.ly/VPG-apply",
+      "calendar": "http://bit.ly/SynergyGreeceCalendar",
+      "mail": "training@solidaritymission.org",
+      "comment": "This project is organized by our friends and partners Qualtimpact, it is delivered by our P and is funded by Erasmus+. We highly appreciate when you share this information within your networks and with people who might be interest in it"
+    },
+  
+    {
+      "id": 3,
+      "logo": "./images/trainingCard/logo-3.png",
+      "nameTraining": "Name 3",
+      "descriptionTraining": "description 3",
+      "dateTraining": "00.00.0000",
+      "eligibleCountries": [
+        "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
+      ],
+      "city": "City name 3", "country": "Country name 3",
+  
+      "description1": "The notorious Coaching training is back. Volounteer Path Guides specifically is aiming to increase the quality of youth work, by focusing on coaching and menthoring of volunteers. The challenge is to be able to coach and/or mentor young people, especially when it comes to topics such as employability, employment or entrepreneurship. In this 8 days journey you will get the chance to get a hands on experience on coaching though using coaching skills, from some exercises to practice techniques fo full coaching sessions.",
+      "description2": "Solidarity Mission offers 3 spots for motivated people above 18 years old that they work with young people and they are willing to improve their professional performance, by developing their own coaching and mentoring attitude and toolkit.",
+      "costs": ["Accommodation, food are covered 100%", "Travel costs covered 100% up to the maximum reimbursement 180 &#8364;", "Participation fee on the hosting organization: 60 &#8364;"],
+      "deadline": "20 February 2018",
+      "infoletter": "http://bit.ly/VPG-info",
+      "applicationForm": "http://bit.ly/VPG-apply",
+      "calendar": "http://bit.ly/SynergyGreeceCalendar",
+      "mail": "training@solidaritymission.org",
+      "comment": "This project is organized by our friends and partners Qualtimpact, it is delivered by our P and is funded by Erasmus+. We highly appreciate when you share this information within your networks and with people who might be interest in it"
+    },
+  
+    {
+      "id": 4,
+      "logo": "./images/trainingCard/logo-4.jpg",
+      "nameTraining": "Name 4",
+      "descriptionTraining": "description 4",
+      "dateTraining": "00.00.0000",
+      "eligibleCountries": [
+        "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
+      ],
+      "city": "City name 4", "country": "Country name 4",
+  
+      "description1": "The notorious Coaching training is back. Volounteer Path Guides specifically is aiming to increase the quality of youth work, by focusing on coaching and menthoring of volunteers. The challenge is to be able to coach and/or mentor young people, especially when it comes to topics such as employability, employment or entrepreneurship. In this 8 days journey you will get the chance to get a hands on experience on coaching though using coaching skills, from some exercises to practice techniques fo full coaching sessions.",
+      "description2": "Solidarity Mission offers 3 spots for motivated people above 18 years old that they work with young people and they are willing to improve their professional performance, by developing their own coaching and mentoring attitude and toolkit.",
+      "costs": ["Accommodation, food are covered 100%", "Travel costs covered 100% up to the maximum reimbursement 180 &#8364;", "Participation fee on the hosting organization: 60 &#8364;"],
+      "deadline": "20 February 2018",
+      "infoletter": "http://bit.ly/VPG-info",
+      "applicationForm": "http://bit.ly/VPG-apply",
+      "calendar": "http://bit.ly/SynergyGreeceCalendar",
+      "mail": "training@solidaritymission.org",
+      "comment": "This project is organized by our friends and partners Qualtimpact, it is delivered by our P and is funded by Erasmus+. We highly appreciate when you share this information within your networks and with people who might be interest in it"
+    },
+  
+    {
+      "id": 5,
+      "logo": "./images/trainingCard/logo-5.jpg",
+      "nameTraining": "Name 5",
+      "descriptionTraining": "description 5",
+      "dateTraining": "00.00.0000",
+      "eligibleCountries": [
+        "./images/trainingCard/fl-1.jpg", "./images/trainingCard/fl-2.jpg", "./images/trainingCard/fl-3.jpg", "./images/trainingCard/fl-4.jpg", "./images/trainingCard/fl-5.jpg", "./images/trainingCard/fl-6.jpg", "./images/trainingCard/fl-7.jpg"
+      ],
+      "city": "City name 5", "country": "Country name 5",
+  
+      "description1": "The notorious Coaching training is back. Volounteer Path Guides specifically is aiming to increase the quality of youth work, by focusing on coaching and menthoring of volunteers. The challenge is to be able to coach and/or mentor young people, especially when it comes to topics such as employability, employment or entrepreneurship. In this 8 days journey you will get the chance to get a hands on experience on coaching though using coaching skills, from some exercises to practice techniques fo full coaching sessions.",
+      "description2": "Solidarity Mission offers 3 spots for motivated people above 18 years old that they work with young people and they are willing to improve their professional performance, by developing their own coaching and mentoring attitude and toolkit.",
+      "costs": ["Accommodation, food are covered 100%", "Travel costs covered 100% up to the maximum reimbursement 180 &#8364;", "Participation fee on the hosting organization: 60 &#8364;"],
+      "deadline": "20 February 2018",
+      "infoletter": "http://bit.ly/VPG-info",
+      "applicationForm": "http://bit.ly/VPG-apply",
+      "calendar": "http://bit.ly/SynergyGreeceCalendar",
+      "mail": "training@solidaritymission.org",
+      "comment": "This project is organized by our friends and partners Qualtimpact, it is delivered by our P and is funded by Erasmus+. We highly appreciate when you share this information within your networks and with people who might be interest in it"
+    }
+  ],
+
+  "organisations": [
+    {
+      "id": 1,
+      "organisationLogo": "./images/organisationsCard/erasmus.png",
+      "acronym": "Acronim 1",
+      "telephone": "XXXX-XXXX-XXXX-XXXX",
+      "website": "www.website1.com",
+      "city": " City 1",
+      "country": "Country 1",
+  
+      "fullLegalName": "Full Legal Name",
+      "address": "Address 1",
+      "postCode": "xxx-xxx",
+      "PObox": "P.O. box 1",
+      "referee": "XXXXXXXXXX",
+      "refereePosition": "XXXXXXXXXX",
+      "telephone1": "XXXX-XXXX-XXXX-XXXX",
+      "mail": "email@website.com",
+      "organisationType": "XXXXXXXXXX",
+      "profit": "non-profit",
+      "PICnumber": "XXXXXXXXXX",
+      "nationalId": "XXXXXXXXXX",
+      "cedex": "XXXXXXXXXX",
+      "department": "XXXXXXXXXX",
+      "fax": "XXXXXXXXXX"
+    },
+    
+    {
+      "id": 2,
+      "organisationLogo": "./images/organisationsCard/real_thing.png",
+      "acronym": "Acronim 2",
+      "telephone": "XXXX-XXXX-XXXX-XXXX",
+      "website": "www.website2.com",
+      "city": " City 2",
+      "country": "Country 2",
+  
+      "fullLegalName": "Full Legal Name",
+      "address": "Address 1",
+      "postCode": "xxx-xxx",
+      "PObox": "P.O. box 1",
+      "referee": "XXXXXXXXXX",
+      "refereePosition": "XXXXXXXXXX",
+      "telephone1": "XXXX-XXXX-XXXX-XXXX",
+      "mail": "email@website.com",
+      "organisationType": "XXXXXXXXXX",
+      "profit": "non-profit",
+      "PICnumber": "XXXXXXXXXX",
+      "nationalId": "XXXXXXXXXX",
+      "cedex": "XXXXXXXXXX",
+      "department": "XXXXXXXXXX",
+      "fax": "XXXXXXXXXX"
+    },
+  
+    {
+      "id": 3,
+      "organisationLogo": "./images/organisationsCard/red_leaves.png",
+      "acronym": "Acronim 3",
+      "telephone": "XXXX-XXXX-XXXX-XXXX",
+      "website": "www.website3.com",
+      "city": " City 3",
+      "country": "Country 3",
+  
+      "fullLegalName": "Full Legal Name",
+      "address": "Address 1",
+      "postCode": "xxx-xxx",
+      "PObox": "P.O. box 1",
+      "referee": "XXXXXXXXXX",
+      "refereePosition": "XXXXXXXXXX",
+      "telephone1": "XXXX-XXXX-XXXX-XXXX",
+      "mail": "email@website.com",
+      "organisationType": "XXXXXXXXXX",
+      "profit": "non-profit",
+      "PICnumber": "XXXXXXXXXX",
+      "nationalId": "XXXXXXXXXX",
+      "cedex": "XXXXXXXXXX",
+      "department": "XXXXXXXXXX",
+      "fax": "XXXXXXXXXX"
+    }, 
+  
+    {
+      "id": 4,
+      "organisationLogo": "./images/organisationsCard/s_h_a.png",
+      "acronym": "Acronim 4",
+      "telephone": "XXXX-XXXX-XXXX-XXXX",
+      "website": "www.website4.com",
+      "city": " City 4",
+      "country": "Country 4",
+  
+      "fullLegalName": "Full Legal Name",
+      "address": "Address 1",
+      "postCode": "xxx-xxx",
+      "PObox": "P.O. box 1",
+      "referee": "XXXXXXXXXX",
+      "refereePosition": "XXXXXXXXXX",
+      "telephone1": "XXXX-XXXX-XXXX-XXXX",
+      "mail": "email@website.com",
+      "organisationType": "XXXXXXXXXX",
+      "profit": "non-profit",
+      "PICnumber": "XXXXXXXXXX",
+      "nationalId": "XXXXXXXXXX",
+      "cedex": "XXXXXXXXXX",
+      "department": "XXXXXXXXXX",
+      "fax": "XXXXXXXXXX"
+    },
+  
+    {
+      "id": 5,
+      "organisationLogo": "./images/organisationsCard/snow_image.png",
+      "acronym": "Acronim 5",
+      "telephone": "XXXX-XXXX-XXXX-XXXX",
+      "website": "www.website5.com",
+      "city": " City 5",
+      "country": "Country 5",
+  
+      "fullLegalName": "Full Legal Name",
+      "address": "Address 1",
+      "postCode": "xxx-xxx",
+      "PObox": "P.O. box 1",
+      "referee": "XXXXXXXXXX",
+      "refereePosition": "XXXXXXXXXX",
+      "telephone1": "XXXX-XXXX-XXXX-XXXX",
+      "mail": "email@website.com",
+      "organisationType": "XXXXXXXXXX",
+      "profit": "non-profit",
+      "PICnumber": "XXXXXXXXXX",
+      "nationalId": "XXXXXXXXXX",
+      "cedex": "XXXXXXXXXX",
+      "department": "XXXXXXXXXX",
+      "fax": "XXXXXXXXXX"
+    }
+  ],
+
+  "members": [
+    {
+      "id": 1,
+      "photo": "./images/memberCard/henry.png",
+      "name": "Name 1",
+      "surname": "Surname 1",
+      "telephone": "+30 Telephone",
+      "address": ["45 address", "16584", "Athens", "Greece"],
+      "organisation": "Organisation name",
+      "position": "position ?",
+  
+      "postCode": "123 45",
+      "dateOfBirth": "xx.xx.xxxx",
+      "phoneIcon": "./images/icons/phone.png",
+      "telephone1": "+30 Telephone",
+      "email": "emailname@box.com",
+      "website": "www.websitename.com",
+      "organisationFeesPaid": false,
+      "city": "City name",
+      "country": "Country name"
+    },
+  
+    {
+      "id": 2,
+      "photo": "./images/memberCard/james.png",
+      "name": "Name 2",
+      "surname": "Surname 2",
+      "telephone": "+30 Telephone",
+      "address": ["45 address", "16584", "Athens", "Greece"],
+      "organisation": "Organisation name",
+      "position": "position ?",
+  
+      "postCode": "123 45",
+      "dateOfBirth": "xx.xx.xxxx",
+      "phoneIcon": "./images/icons/phone.png",
+      "telephone1": "+30 Telephone",
+      "email": "emailname@box.com",
+      "website": "www.websitename.com",
+      "organisationFeesPaid": false,
+      "city": "City name",
+      "country": "Country name"
+    },
+  
+    {
+      "id": 3,
+      "photo": "./images/memberCard/jules.png",
+      "name": "Name 3",
+      "surname": "Surname 3",
+      "telephone": "+30 Telephone",
+      "address": ["45 address", "16584", "Athens", "Greece"],
+      "organisation": "Organisation name",
+      "position": "position ?",
+  
+      "postCode": "123 45",
+      "dateOfBirth": "xx.xx.xxxx",
+      "phoneIcon": "./images/icons/phone.png",
+      "telephone1": "+30 Telephone",
+      "email": "emailname@box.com",
+      "website": "www.websitename.com",
+      "organisationFeesPaid": false,
+      "city": "City name",
+      "country": "Country name"
+    },
+  
+    {
+      "id": 4,
+      "photo": "./images/memberCard/Mimie.png",
+      "name": "Name 4",
+      "surname": "Surname 4",
+      "telephone": "+30 Telephone",
+      "address": ["45 address", "16584", "Athens", "Greece"],
+      "organisation": "Organisation name",
+      "position": "position ?",
+  
+      "postCode": "123 45",
+      "dateOfBirth": "xx.xx.xxxx",
+      "phoneIcon": "./images/icons/phone.png",
+      "telephone1": "+30 Telephone",
+      "email": "emailname@box.com",
+      "website": "www.websitename.com",
+      "organisationFeesPaid": false,
+      "city": "City name",
+      "country": "Country name"
+    },
+  
+    {
+      "id": 5,
+      "photo": "./images/memberCard/Nana.png",
+      "name": "Name 5",
+      "surname": "Surname 5",
+      "telephone": "+30 Telephone",
+      "address": ["45 address", "16584", "Athens", "Greece"],
+      "organisation": "Organisation name",
+      "position": "position ?",
+  
+      "postCode": "123 45",
+      "dateOfBirth": "xx.xx.xxxx",
+      "phoneIcon": "./images/icons/phone.png",
+      "telephone1": "+30 Telephone",
+      "email": "emailname@box.com",
+      "website": "www.websitename.com",
+      "organisationFeesPaid": false,
+      "city": "City name",
+      "country": "Country name"
+    }
+  ]
+
+}
