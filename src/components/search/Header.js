@@ -3,10 +3,10 @@ import Search from "../search/Search";
 import Counter from "../search/Counter";
 import "../search/header.css";
 
-const Header = ({ onChange, value, counter }) => (
+const Header = ({ ...props }) => (
   <div className="header">
-    <Search onChange={onChange} value={value} />
-    <Counter counter={counter} />
+    <Search {...props} />
+    <Counter {...props} />
   </div>
 );
 
